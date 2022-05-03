@@ -1,0 +1,52 @@
+Linux wangzc-wangzc 5.13.19-kvm-shadow-ept #40 SMP Wed Apr 20 21:46:43 CST 2022 x86_64 x86_64 x86_64 GNU/Linux
+===================kernel decompress===================
+
+real	0m21.747s
+user	0m6.809s
+sys	0m2.010s
+===================kernel build===================
+./benchmark.sh: 行 16: ./bench-kernel-: 没有那个文件或目录
+===================fs-mark===================
+===================fs-mark===================
+1KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1024  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 16:15:22 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1024 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    84         1000         1024        194.7            15116
+    84         2000         1024        226.9            14706
+    84         3000         1024        206.1            14816
+    84         4000         1024        230.5            14943
+    84         5000         1024        702.6            10384
+    84         6000         1024       1708.4             8899
+    84         7000         1024       1689.5            10505
+    84         8000         1024       1686.0            10392
+    84         9000         1024       1677.7            10273
+    84        10000         1024       1674.9             9523
+Average Files/sec:        999.2
+p50 Files/sec: 702
+p90 Files/sec: 194
+p99 Files/sec: 194
+===================lmbench===================
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m1.808s
+user	0m46.737s
+sys	1m12.809s
+
+
+
