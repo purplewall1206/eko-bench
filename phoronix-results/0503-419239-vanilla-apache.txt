@@ -1,0 +1,18 @@
+
+0503-419239-vanilla-apache
+Intel Core i5-12600K testing with a Onda ONDA MJZ690 (5.23 BIOS) and llvmpipe on Ubuntu 21.10 via the Phoronix Test Suite.
+
+
+Intel Core i5-12600K - llvmpipe - Onda ONDA MJZ690: 
+
+	Processor: Intel Core i5-12600K @ 6.30GHz (10 Cores / 16 Threads), Motherboard: Onda ONDA MJZ690 (5.23 BIOS), Chipset: Intel Device 7aa7, Memory: 1 x 16 GB DDR4-3200MT/s Kingston CBD32D4U2S8HA-16, Disk: 1024GB INTEL SSDPEKNU010TZ, Graphics: llvmpipe, Audio: Realtek ALC897, Network: Realtek RTL8111/8168/8411
+
+	OS: Ubuntu 21.10, Kernel: 4.19.239-llvm10 (x86_64), Desktop: GNOME Shell 40.5, Display Server: X Server 1.20.13, OpenGL: 4.5 Mesa 21.2.6 (LLVM 12.0.1 256 bits), Vulkan: 1.1.182, Compiler: GCC 11.2.0 + Clang 13.0.0-2 + LLVM 13.0.0, File-System: ext4, Screen Resolution: 1024x768
+
+
+    Apache HTTP Server 2.4.48
+    Concurrent Requests: 1
+[3m    Requests Per Second > Higher Is Better[0m
+    Intel Core i5-12600K - llvmpipe - Onda ONDA MJZ690 . 44764.96 |=====================================
+
+

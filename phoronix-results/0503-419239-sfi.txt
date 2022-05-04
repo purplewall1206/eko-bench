@@ -1,0 +1,149 @@
+
+0503-419239-sfi
+Intel Core i5-12600K testing with a Onda ONDA MJZ690 (5.23 BIOS) and llvmpipe on Ubuntu 21.10 via the Phoronix Test Suite.
+
+
+INTEL SSDPEKNU010TZ - Intel Core i5-12600K: 
+
+	Processor: Intel Core i5-12600K @ 6.30GHz (10 Cores / 16 Threads), Motherboard: Onda ONDA MJZ690 (5.23 BIOS), Chipset: Intel Device 7aa7, Memory: 1 x 16 GB DDR4-3200MT/s Kingston CBD32D4U2S8HA-16, Disk: 1024GB INTEL SSDPEKNU010TZ, Graphics: llvmpipe, Audio: Realtek ALC897, Network: Realtek RTL8111/8168/8411
+
+	OS: Ubuntu 21.10, Kernel: 4.19.239-llvm10-sfi (x86_64), Desktop: GNOME Shell 40.5, Display Server: X Server 1.20.13, OpenGL: 4.5 Mesa 21.2.6 (LLVM 12.0.1 256 bits), Vulkan: 1.1.182, Compiler: GCC 11.2.0 + Clang 13.0.0-2 + LLVM 13.0.0, File-System: ext4, Screen Resolution: 1024x768
+
+
+    Dbench 4.0
+    1 Clients
+[3m    MB/s > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 271.86 |===============================================
+
+
+    PostMark 1.51
+    Disk Transaction Performance
+[3m    TPS > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 2142 |=================================================
+
+
+    Hackbench
+    Count: 1 - Type: Thread
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 11.50 |================================================
+
+
+    Hackbench
+    Count: 2 - Type: Thread
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 22.80 |================================================
+
+
+    Hackbench
+    Count: 4 - Type: Thread
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 45.30 |================================================
+
+
+    Hackbench
+    Count: 8 - Type: Thread
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 90.66 |================================================
+
+
+    Hackbench
+    Count: 1 - Type: Process
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 1.820 |================================================
+
+
+    Hackbench
+    Count: 16 - Type: Thread
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 181.90 |===============================================
+
+
+    Hackbench
+    Count: 2 - Type: Process
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 3.080 |================================================
+
+
+    Hackbench
+    Count: 32 - Type: Thread
+[3m    Seconds < Lower Is Better[0m
+
+
+    Hackbench
+    Count: 4 - Type: Process
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 6.049 |================================================
+
+
+    Hackbench
+    Count: 8 - Type: Process
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 10.35 |================================================
+
+
+    Hackbench
+    Count: 16 - Type: Process
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 22.22 |================================================
+
+
+    Hackbench
+    Count: 32 - Type: Process
+[3m    Seconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 54.63 |================================================
+
+
+    OpenSSL 3.0
+    Algorithm: SHA256
+[3m    byte/s > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 14703494390 |==========================================
+
+
+    OpenSSL 3.0
+    Algorithm: RSA4096
+[3m    sign/s > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 2855.5 |===============================================
+
+
+    OpenSSL 3.0
+    Algorithm: RSA4096
+[3m    verify/s > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 186434.2 |=============================================
+
+
+    PyBench 2018-02-16
+    Total For Average Test Times
+[3m    Milliseconds < Lower Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 551 |==================================================
+
+
+    Apache HTTP Server 2.4.48
+    Concurrent Requests: 1
+[3m    Requests Per Second > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 25599.02 |=============================================
+
+
+    Apache HTTP Server 2.4.48
+    Concurrent Requests: 20
+[3m    Requests Per Second > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 88298.41 |=============================================
+
+
+    Apache HTTP Server 2.4.48
+    Concurrent Requests: 100
+[3m    Requests Per Second > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 83542.50 |=============================================
+
+
+    Apache HTTP Server 2.4.48
+    Concurrent Requests: 200
+[3m    Requests Per Second > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 83412.85 |=============================================
+
+
+    Apache HTTP Server 2.4.48
+    Concurrent Requests: 500
+[3m    Requests Per Second > Higher Is Better[0m
+    INTEL SSDPEKNU010TZ - Intel Core i5-12600K . 43501.18 |=============================================
+
+

@@ -1,0 +1,290 @@
+Linux wangzc-wangzc 4.19.239-llvm10 #6 SMP Sat Apr 23 04:16:33 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+===================kernel decompress===================
+
+real	0m4.602s
+user	0m4.580s
+sys	0m0.896s
+
+real	0m4.575s
+user	0m4.552s
+sys	0m0.929s
+
+real	0m4.669s
+user	0m4.612s
+sys	0m0.957s
+
+real	0m4.682s
+user	0m4.593s
+sys	0m1.077s
+
+real	0m4.621s
+user	0m4.596s
+sys	0m1.009s
+
+real	0m4.611s
+user	0m4.557s
+sys	0m0.934s
+
+real	0m4.658s
+user	0m4.632s
+sys	0m0.951s
+
+real	0m4.661s
+user	0m4.645s
+sys	0m1.002s
+
+real	0m4.591s
+user	0m4.568s
+sys	0m0.873s
+
+real	0m4.621s
+user	0m4.620s
+sys	0m0.899s
+===================kernel build===================
+sudo: ./bench-kernel-build.sh：找不到命令
+===================fs-mark===================
+===================fs-mark===================
+1KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1024  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:23:58 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1024 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    89         1000         1024       1689.2             9422
+    89         2000         1024       1641.9            12222
+    89         3000         1024       1621.0            11122
+    89         4000         1024       1668.5            11796
+    89         5000         1024       1754.1             8428
+    89         6000         1024       1682.8             9290
+    89         7000         1024       1665.3            11059
+    89         8000         1024       1733.5             9267
+    89         9000         1024       1708.9             9259
+    89        10000         1024       1706.0             9476
+Average Files/sec:       1686.7
+p50 Files/sec: 1682
+p90 Files/sec: 1621
+p99 Files/sec: 1621
+10KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10240  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:24:04 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10240 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    89         1000        10240       1637.6            12341
+    89         2000        10240       1631.0             9700
+    89         3000        10240       1692.7             9313
+    89         4000        10240       1687.2             9527
+    89         5000        10240       1609.8            10626
+    89         6000        10240       1686.2             9285
+    89         7000        10240       1674.7             9696
+    89         8000        10240       1659.9            10154
+    89         9000        10240       1605.1            11673
+    89        10000        10240       1672.1             9737
+Average Files/sec:       1655.2
+p50 Files/sec: 1659
+p90 Files/sec: 1605
+p99 Files/sec: 1605
+100KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  102400  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:24:10 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 102400 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    89         1000       102400       1252.7            10488
+    89         2000       102400       1289.0            10225
+    89         3000       102400       1324.6             9586
+    89         4000       102400       1313.0             9799
+    89         5000       102400       1214.0            11907
+    89         6000       102400       1314.4             9667
+    89         7000       102400       1292.1             9869
+    89         8000       102400       1252.5            10386
+    89         9000       102400       1238.5            10131
+    89        10000       102400       1183.9            12217
+Average Files/sec:       1267.1
+p50 Files/sec: 1252
+p90 Files/sec: 1183
+p99 Files/sec: 1183
+1MB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1048576  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:24:18 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    90         1000      1048576        384.5            13693
+    90         2000      1048576        128.7            19832
+    90         3000      1048576        124.3            20771
+    90         4000      1048576        126.8            19921
+    90         5000      1048576        136.9            19434
+    90         6000      1048576        552.0            12344
+    90         7000      1048576        567.7            11988
+    90         8000      1048576        527.7            12344
+    90         9000      1048576        134.5            18089
+    90        10000      1048576        126.1            19365
+Average Files/sec:        280.4
+p50 Files/sec: 134
+p90 Files/sec: 124
+p99 Files/sec: 124
+10MB file * 100 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10485760  -n  100 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:25:12 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10485760 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    91          100     10485760         14.9             9014
+    91          200     10485760         15.7             8296
+    91          300     10485760          6.3             7474
+    91          400     10485760          3.7             7212
+    91          500     10485760         19.1             3000
+    91          600     10485760        113.5             2457
+    91          700     10485760         43.7             4575
+    91          800     10485760         15.5             9349
+    91          900     10485760         14.9             9480
+    92         1000     10485760         14.8             9773
+Average Files/sec:         25.6
+p50 Files/sec: 14
+p90 Files/sec: 3
+p99 Files/sec: 3
+100MB file * 20 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  104857600  -n  20 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:26:36 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 104857600 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    92           20    104857600          1.9             4275
+    92           40    104857600          1.8             4218
+    92           60    104857600          1.8             4305
+    92           80    104857600          1.8             4218
+    93          100    104857600          1.8             4356
+    93          120    104857600          0.5             3148
+    93          140    104857600          3.3             2793
+    93          160    104857600          0.8             2967
+    93          180    104857600          1.0             2747
+    94          200    104857600          4.4             3125
+Average Files/sec:          1.3
+p50 Files/sec: 1
+p90 Files/sec: 0
+p99 Files/sec: 0
+1GB file * 5 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10485760  -n  5 
+#	Version 3.3, 1 thread(s) starting at Tue May  3 20:29:08 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10485760 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    94            5     10485760         16.0              430
+    94           10     10485760         14.4              482
+    94           15     10485760         16.6              450
+    94           20     10485760         16.4              497
+    94           25     10485760         16.1              481
+    94           30     10485760         16.7              408
+    94           35     10485760         15.8              530
+    94           40     10485760         15.6              506
+    94           45     10485760         14.2              446
+    94           50     10485760         16.3              469
+Average Files/sec:         15.4
+p50 Files/sec: 16
+p90 Files/sec: 14
+p99 Files/sec: 14
+===================lmbench===================
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m10.103s
+user	0m48.438s
+sys	1m19.997s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m11.623s
+user	0m48.569s
+sys	1m21.201s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m14.183s
+user	0m48.287s
+sys	1m22.550s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m11.488s
+user	0m48.232s
+sys	1m22.259s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m7.664s
+user	0m47.757s
+sys	1m18.403s
+
+
+

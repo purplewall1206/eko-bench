@@ -1,0 +1,2166 @@
+[lmbench3.0 results for Linux wangzc-wangzc 4.19.239-llvm10-sfi-workaround #25 SMP Fri Apr 29 07:17:06 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux]
+[LMBENCH_VER: 3.0-a9]
+[BENCHMARK_HARDWARE: NO]
+[BENCHMARK_OS: YES]
+[ALL: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m 64m]
+[DISKS: ]
+[DISK_DESC: ]
+[ENOUGH: 10000]
+[FAST: ]
+[FASTMEM: NO]
+[FILE: /var/tmp/XXX]
+[FSDIR: /var/tmp]
+[HALF: 512 1k 2k 4k 8k 16k 32k 64k 128k 256k 512k 1m 2m 4m 8m 16m 32m]
+[INFO: INFO.wangzc-wangzc]
+[LINE_SIZE: ]
+[LOOP_O: 0.00000266]
+[MB: 100]
+[MHZ: 4686]
+[MOTHERBOARD: ]
+[NETWORKS: ]
+[PROCESSORS: 16]
+[REMOTE: ]
+[SLOWFS: NO]
+[OS: x86_64-linux-gnu]
+[SYNC_MAX: 1]
+[LMBENCH_SCHED: DEFAULT]
+[TIMING_O: 0]
+[LMBENCH VERSION: 3.0-a9]
+[USER: root]
+[HOSTNAME: wangzc-wangzc]
+[NODENAME: wangzc-wangzc]
+[SYSNAME: Linux]
+[PROCESSOR: x86_64]
+[MACHINE: x86_64]
+[RELEASE: 4.19.239-llvm10-sfi-workaround]
+[VERSION: #25 SMP Fri Apr 29 07:17:06 UTC 2022]
+[BUSYBOX LINKAGE: : Dynamic ]
+[2022年 05月 04日 星期三 14:04:54 CST]
+[ 14:04:54 up 3:36, 1 user, load average: 1.24, 1.51, 4.97]
+[net: Kernel Interface table]
+[net: Iface      MTU    RX-OK RX-ERR RX-DRP RX-OVR    TX-OK TX-ERR TX-DRP TX-OVR Flg]
+[net: enp2s0    1500     6610      0      0 0          3113      0      0      0 BMRU]
+[if: enp2s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500]
+[if: inet 192.168.1.103  netmask 255.255.255.0  broadcast 192.168.1.255]
+[if: inet6 fe80::ee1:6a0d:cc8d:8d0a  prefixlen 64  scopeid 0x20<link>]
+[if: ether 00:e0:97:1a:5e:d6  txqueuelen 1000  (以太网)]
+[if: RX packets 6610  bytes 2681407 (2.6 MB)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 3113  bytes 258819 (258.8 KB)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[net: lo       65536 933753508      0      0 0      933753508      0      0      0 LRU]
+[if: lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536]
+[if: inet 127.0.0.1  netmask 255.0.0.0]
+[if: inet6 ::1  prefixlen 128  scopeid 0x10<host>]
+[if: loop  txqueuelen 1000  (本地环回)]
+[if: RX packets 933753508  bytes 570411764085 (570.4 GB)]
+[if: RX errors 0  dropped 0  overruns 0  frame 0]
+[if: TX packets 933753508  bytes 570411764085 (570.4 GB)]
+[if: TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0]
+[if: ]
+[mount: sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)]
+[mount: udev on /dev type devtmpfs (rw,nosuid,relatime,size=8073932k,nr_inodes=2018483,mode=755)]
+[mount: devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)]
+[mount: tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=1618864k,mode=755)]
+[mount: /dev/nvme0n1p2 on / type ext4 (rw,relatime,errors=remount-ro)]
+[mount: securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev)]
+[mount: tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k)]
+[mount: cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate)]
+[mount: pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)]
+[mount: efivarfs on /sys/firmware/efi/efivars type efivarfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)]
+[mount: systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=29,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=20922)]
+[mount: hugetlbfs on /dev/hugepages type hugetlbfs (rw,relatime,pagesize=2M)]
+[mount: mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)]
+[mount: debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)]
+[mount: fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)]
+[mount: configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)]
+[mount: binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)]
+[mount: tmpfs on /run/qemu type tmpfs (rw,nosuid,nodev,relatime,mode=755)]
+[mount: /var/lib/snapd/snaps/core_12834.snap on /snap/core/12834 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/bare_5.snap on /snap/bare/5 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/core_12941.snap on /snap/core/12941 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/core20_1434.snap on /snap/core20/1434 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/firefox_1232.snap on /snap/firefox/1232 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/snap-store_558.snap on /snap/snap-store/558 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/snap-store_557.snap on /snap/snap-store/557 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/firefox_1188.snap on /snap/firefox/1188 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/core20_1405.snap on /snap/core20/1405 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/tree_18.snap on /snap/tree/18 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/gnome-3-38-2004_87.snap on /snap/gnome-3-38-2004/87 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/gtk-common-themes_1519.snap on /snap/gtk-common-themes/1519 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /var/lib/snapd/snaps/gnome-3-38-2004_99.snap on /snap/gnome-3-38-2004/99 type squashfs (ro,nodev,relatime,x-gdu.hide)]
+[mount: /dev/nvme0n1p1 on /boot/efi type vfat (rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=iso8859-1,shortname=mixed,errors=remount-ro)]
+[mount: /usr/share/wine/wine.squashfs on /run/wine type squashfs (ro,relatime)]
+[mount: tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=1618860k,nr_inodes=404715,mode=700,uid=1000,gid=1000)]
+[mount: gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)]
+[mount: portal on /run/user/1000/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)]
+[mount: tmpfs on /run/snapd/ns type tmpfs (rw,nosuid,nodev,noexec,relatime,size=1618864k,mode=755)]
+[mount: nsfs on /run/snapd/ns/snap-store.mnt type nsfs (rw)]
+[mount: tracefs on /sys/kernel/debug/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)]
+Simple syscall: 0.0409 microseconds
+Simple read: 0.4545 microseconds
+Simple write: 0.2690 microseconds
+Simple stat: 0.8401 microseconds
+Simple fstat: 0.6776 microseconds
+Simple open/close: 1.1615 microseconds
+Select on 10 fd's: 0.3053 microseconds
+Select on 100 fd's: 10.7057 microseconds
+Select on 250 fd's: 23.9134 microseconds
+Select on 500 fd's: 48.5903 microseconds
+Select on 10 tcp fd's: 0.3827 microseconds
+Select on 100 tcp fd's: 9.5078 microseconds
+Select on 250 tcp fd's: 24.9034 microseconds
+Select on 500 tcp fd's: 50.7500 microseconds
+Signal handler installation: 0.0892 microseconds
+Signal handler overhead: 0.6451 microseconds
+Protection fault: 0.2343 microseconds
+Pipe latency: 3.3232 microseconds
+AF_UNIX sock stream latency: 4.0008 microseconds
+Process fork+exit: 62.6108 microseconds
+Process fork+execve: 815.9286 microseconds
+Process fork+/bin/sh -c: 1650.5000 microseconds
+File /var/tmp/XXX write bandwidth: 613005 KB/sec
+Pagefaults on /var/tmp/XXX: 0.0990 microseconds
+
+"mappings
+0.524288 8.171
+1.048576 14
+2.097152 23
+4.194304 53
+8.388608 104
+16.777216 174
+33.554432 422
+67.108864 798
+
+"File system latency
+0k	1036	93951	87853
+1k	733	67378	78711
+4k	741	67223	78822
+10k	503	46164	68588
+
+UDP latency using localhost: 4.1171 microseconds
+TCP latency using localhost: 4.8378 microseconds
+TCP/IP connection cost to localhost: 9.6761 microseconds
+
+Socket bandwidth using localhost
+0.000001 7.63 MB/sec
+0.000064 457.94 MB/sec
+0.000128 896.66 MB/sec
+0.000256 1651.52 MB/sec
+0.000512 2391.81 MB/sec
+0.001024 4514.75 MB/sec
+0.001437 5811.17 MB/sec
+10.000000 13512.30 MB/sec
+
+Avg xfer: 3.2KB, 41.8KB in 2.4340 millisecs, 17.16 MB/sec
+AF_UNIX sock stream bandwidth: 14780.49 MB/sec
+Pipe bandwidth: 5982.62 MB/sec
+
+"read bandwidth
+0.000512 664.39
+0.001024 1296.98
+0.002048 2518.14
+0.004096 4873.39
+0.008192 7817.32
+0.016384 10998.55
+0.032768 10726.66
+0.065536 13546.78
+0.131072 14538.51
+0.262144 14018.78
+0.524288 12355.86
+1.05 11520.84
+2.10 10810.06
+4.19 11865.62
+8.39 11836.82
+16.78 8942.28
+33.55 8446.32
+67.11 7585.92
+
+"read open2close bandwidth
+0.000512 282.32
+0.001024 559.77
+0.002048 1287.41
+0.004096 2282.12
+0.008192 3752.06
+0.016384 7050.83
+0.032768 9281.62
+0.065536 11405.27
+0.131072 13232.46
+0.262144 13412.24
+0.524288 12501.57
+1.05 13221.34
+2.10 12033.94
+4.19 9891.47
+8.39 10036.99
+16.78 2935.13
+33.55 8465.50
+67.11 7591.93
+
+
+"Mmap read bandwidth
+0.000512 91945.44
+0.001024 67398.81
+0.002048 70209.83
+0.004096 71378.11
+0.008192 72026.73
+0.016384 62129.35
+0.032768 72239.40
+0.065536 55695.65
+0.131072 68803.15
+0.262144 55370.74
+0.524288 54290.74
+1.05 41042.75
+2.10 40754.99
+4.19 35215.28
+8.39 38867.90
+16.78 29140.42
+33.55 17604.63
+67.11 23362.53
+
+"Mmap read open2close bandwidth
+0.000512 184.22
+0.001024 445.50
+0.002048 882.56
+0.004096 1470.70
+0.008192 2729.12
+0.016384 5644.57
+0.032768 8962.65
+0.065536 12332.62
+0.131072 12218.07
+0.262144 18067.38
+0.524288 19958.40
+1.05 23444.16
+2.10 20979.15
+4.19 20637.12
+8.39 20454.48
+16.78 16578.28
+33.55 9364.90
+67.11 11645.79
+
+
+"libc bcopy unaligned
+0.000512 164402.93
+0.001024 182482.77
+0.002048 210185.97
+0.004096 253177.43
+0.008192 258067.12
+0.016384 291192.89
+0.032768 66172.83
+0.065536 66162.77
+0.131072 56123.51
+0.262144 66840.73
+0.524288 52028.22
+1.05 26975.24
+2.10 31332.14
+4.19 23008.32
+8.39 22718.49
+16.78 17593.86
+33.55 12947.88
+
+"libc bcopy aligned
+0.000512 143164.02
+0.001024 179467.51
+0.002048 223784.05
+0.004096 253995.38
+0.008192 250164.15
+0.016384 291308.18
+0.032768 56510.19
+0.065536 57799.46
+0.131072 57267.71
+0.262144 66726.22
+0.524288 57592.60
+1.05 27744.65
+2.10 24909.07
+4.19 22901.23
+8.39 22629.10
+16.78 17720.85
+33.55 13204.17
+
+Memory bzero bandwidth
+0.000512 215433.03
+0.001024 282662.46
+0.002048 291095.43
+0.004096 270542.06
+0.008192 284558.76
+0.016384 292096.67
+0.032768 296053.13
+0.065536 66221.97
+0.131072 77177.58
+0.262144 77312.93
+0.524288 77382.87
+1.05 73739.92
+2.10 52193.83
+4.19 40471.01
+8.39 47757.30
+16.78 41191.67
+33.55 19343.45
+67.11 13977.13
+
+"unrolled bcopy unaligned
+0.000512 37387.59
+0.001024 30175.46
+0.002048 37385.90
+0.004096 37387.99
+0.008192 37399.25
+0.016384 37362.42
+0.032768 28383.40
+0.065536 28417.63
+0.131072 24878.34
+0.262144 28226.87
+0.524288 23580.60
+1.05 19453.39
+2.10 18631.21
+4.19 18502.06
+8.39 13793.05
+16.78 7541.68
+33.55 7613.89
+
+"unrolled partial bcopy unaligned
+0.000512 106973.94
+0.001024 149622.78
+0.002048 149461.31
+0.004096 149603.51
+0.008192 122183.74
+0.016384 128399.44
+0.032768 68178.15
+0.065536 68371.86
+0.131072 68525.44
+0.262144 68462.09
+0.524288 56099.01
+1.05 33504.80
+2.10 26104.00
+4.19 26183.72
+8.39 20374.19
+16.78 10936.91
+33.55 8280.27
+
+Memory read bandwidth
+0.000512 28936.84
+0.001024 36129.82
+0.002048 32507.73
+0.004096 36316.23
+0.008192 31244.82
+0.016384 31554.89
+0.032768 36323.64
+0.065536 28902.75
+0.131072 28924.34
+0.262144 25608.80
+0.524288 28653.00
+1.05 26488.34
+2.10 24447.19
+4.19 24159.43
+8.39 23922.60
+16.78 17411.96
+33.55 12420.67
+67.11 11088.71
+
+Memory partial read bandwidth
+0.000512 221124.82
+0.001024 193152.82
+0.002048 187231.86
+0.004096 221251.33
+0.008192 221148.27
+0.016384 210978.71
+0.032768 217820.11
+0.065536 110135.41
+0.131072 99260.46
+0.262144 107713.11
+0.524288 107121.33
+1.05 90552.75
+2.10 65088.63
+4.19 59182.26
+8.39 59694.50
+16.78 44809.29
+33.55 35582.64
+67.11 11822.57
+
+Memory write bandwidth
+0.000512 37360.85
+0.001024 31853.79
+0.002048 37372.33
+0.004096 32545.55
+0.008192 37415.69
+0.016384 37356.12
+0.032768 37402.89
+0.065536 33215.81
+0.131072 32909.42
+0.262144 33220.47
+0.524288 33216.30
+1.05 32542.67
+2.10 29913.34
+4.19 24066.30
+8.39 29446.96
+16.78 27787.07
+33.55 16510.30
+67.11 11796.25
+
+Memory partial write bandwidth
+0.000512 149759.56
+0.001024 129622.51
+0.002048 126214.94
+0.004096 149698.17
+0.008192 149624.60
+0.016384 148959.44
+0.032768 149418.50
+0.065536 66092.01
+0.131072 77245.89
+0.262144 77190.95
+0.524288 69832.47
+1.05 62694.81
+2.10 51567.75
+4.19 39634.89
+8.39 37720.94
+16.78 40990.39
+33.55 17067.36
+67.11 11361.87
+
+Memory partial read/write bandwidth
+0.000512 74837.54
+0.001024 74880.23
+0.002048 74775.25
+0.004096 74765.11
+0.008192 74799.90
+0.016384 74790.04
+0.032768 74761.10
+0.065536 74836.88
+0.131072 74823.39
+0.262144 74795.87
+0.524288 74707.95
+1.05 43525.44
+2.10 23431.87
+4.19 23917.56
+8.39 22857.24
+16.78 21525.02
+33.55 15290.94
+67.11 11688.39
+
+
+
+"size=0k ovr=0.61
+2 1.08
+4 1.38
+8 1.48
+16 1.56
+24 1.57
+32 1.82
+64 1.84
+96 1.59
+
+"size=4k ovr=0.68
+2 1.15
+4 1.41
+8 1.57
+16 1.51
+24 1.69
+32 1.84
+64 1.75
+96 2.14
+
+"size=8k ovr=0.74
+2 1.16
+4 1.47
+8 1.31
+16 1.64
+24 1.79
+32 2.00
+64 1.85
+96 1.79
+
+"size=16k ovr=0.86
+2 2.19
+4 1.09
+8 1.53
+16 1.74
+24 1.85
+32 2.87
+64 3.15
+96 1.91
+
+"size=32k ovr=1.10
+2 1.98
+4 1.16
+8 1.40
+16 1.97
+24 1.99
+32 2.27
+64 1.91
+96 2.20
+
+"size=64k ovr=1.64
+2 1.27
+4 1.70
+8 1.87
+16 1.86
+24 2.09
+32 2.00
+64 2.26
+96 3.40
+
+
+[2022年 05月 04日 星期三 14:07:03 CST]
+########################################
+Kernel bootup logs (dmesg)
+########################################
+[    0.000000] Linux version 4.19.239-llvm10-sfi-workaround (root@dd9e133a2e1d) (clang version 10.0.0-4ubuntu1) #25 SMP Fri Apr 29 07:17:06 UTC 2022
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.19.239-llvm10-sfi-workaround root=UUID=e4dec1b8-2e34-4746-9de8-faf8ef8aac57 ro rootdelay=60 i915.force_probe=4680
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x004: 'AVX registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x200: 'Protection Keys User registers'
+[    0.000000] x86/fpu: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[    0.000000] x86/fpu: xstate_offset[9]:  832, xstate_sizes[9]:    8
+[    0.000000] x86/fpu: Enabled xstate features 0x207, context size is 840 bytes, using 'compacted' format.
+[    0.000000] BIOS-provided physical RAM map:
+[    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000005dfff] usable
+[    0.000000] BIOS-e820: [mem 0x000000000005e000-0x000000000005efff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000000005f000-0x000000000009ffff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000000a0000-0x00000000000fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000721e3fff] usable
+[    0.000000] BIOS-e820: [mem 0x00000000721e4000-0x00000000752e3fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000752e4000-0x00000000753b7fff] ACPI data
+[    0.000000] BIOS-e820: [mem 0x00000000753b8000-0x00000000758cdfff] ACPI NVS
+[    0.000000] BIOS-e820: [mem 0x00000000758ce000-0x0000000075ffefff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000075fff000-0x0000000075ffffff] usable
+[    0.000000] BIOS-e820: [mem 0x0000000076000000-0x0000000079ffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007aa00000-0x000000007abfffff] reserved
+[    0.000000] BIOS-e820: [mem 0x000000007b000000-0x00000000803fffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000c0000000-0x00000000cfffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fe000000-0x00000000fe010fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fed20000-0x00000000fed7ffff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[    0.000000] BIOS-e820: [mem 0x00000000ff000000-0x00000000ffffffff] reserved
+[    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000047fbfffff] usable
+[    0.000000] NX (Execute Disable) protection: active
+[    0.000000] efi: EFI v2.80 by American Megatrends
+[    0.000000] efi:  ACPI=0x75818000  ACPI 2.0=0x75818014  SMBIOS=0x75d89000  SMBIOS 3.0=0x75d88000  MEMATTR=0x6f1fd018  MPS=0xfcb70  ESRT=0x70261898 
+[    0.000000] SMBIOS 3.3.0 present.
+[    0.000000] DMI: Onda Technology Corporation ONDA MJZ690/ONDA MJZ690, BIOS 5.23 11/03/2021
+[    0.000000] tsc: Detected 3700.000 MHz processor
+[    0.000004] tsc: Detected 3686.400 MHz TSC
+[    0.000005] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+[    0.000006] e820: remove [mem 0x000a0000-0x000fffff] usable
+[    0.000009] last_pfn = 0x47fc00 max_arch_pfn = 0x400000000
+[    0.000011] MTRR default type: uncachable
+[    0.000011] MTRR fixed ranges enabled:
+[    0.000011]   00000-9FFFF write-back
+[    0.000012]   A0000-BFFFF uncachable
+[    0.000012]   C0000-FFFFF write-protect
+[    0.000012] MTRR variable ranges enabled:
+[    0.000013]   0 base 000000000000 mask 3FF800000000 write-back
+[    0.000013]   1 base 00007C000000 mask 3FFFFC000000 uncachable
+[    0.000014]   2 base 000080000000 mask 3FFF80000000 uncachable
+[    0.000014]   3 disabled
+[    0.000014]   4 disabled
+[    0.000014]   5 disabled
+[    0.000015]   6 disabled
+[    0.000015]   7 disabled
+[    0.000015]   8 disabled
+[    0.000015]   9 disabled
+[    0.003636] x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[    0.004268] total RAM covered: 30656M
+[    0.004430] Found optimal setting for mtrr clean up
+[    0.004431]  gran_size: 64K 	chunk_size: 128M 	num_reg: 5  	lose cover RAM: 0G
+[    0.007858] e820: update [mem 0x7c000000-0xffffffff] usable ==> reserved
+[    0.007862] last_pfn = 0x76000 max_arch_pfn = 0x400000000
+[    0.011506] found SMP MP-table at [mem 0x000fce40-0x000fce4f]
+[    0.011517] esrt: Reserving ESRT space from 0x0000000070261898 to 0x0000000070261920.
+[    0.011520] e820: update [mem 0x70261000-0x70261fff] usable ==> reserved
+[    0.011531] Scanning 1 areas for low memory corruption
+[    0.011534] Using GB pages for direct mapping
+[    0.011583] Secure boot disabled
+[    0.011584] RAMDISK: [mem 0x3e043000-0x3fffdfff]
+[    0.011588] ACPI: Early table checksum verification disabled
+[    0.011590] ACPI: RSDP 0x0000000075818014 000024 (v02 ALASKA)
+[    0.011592] ACPI: XSDT 0x0000000075817728 0000F4 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.011596] ACPI: FACP 0x00000000753B4000 000114 (v06 ALASKA A M I    01072009 AMI  01000013)
+[    0.011599] ACPI: DSDT 0x0000000075338000 07B07F (v02 ALASKA A M I    01072009 INTL 20200717)
+[    0.011601] ACPI: FACS 0x00000000758CD000 000040
+[    0.011602] ACPI: MCFG 0x00000000753B5000 00003C (v01 ALASKA A M I    01072009 MSFT 00000097)
+[    0.011604] ACPI: FIDT 0x0000000075337000 00009C (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.011605] ACPI: SSDT 0x0000000075331000 005CE0 (v02 CpuRef CpuSsdt  00003000 INTL 20200717)
+[    0.011607] ACPI: SSDT 0x000000007532E000 0029E4 (v02 SaSsdt SaSsdt   00003000 INTL 20200717)
+[    0.011608] ACPI: SSDT 0x000000007532A000 003316 (v02 INTEL  IgfxSsdt 00003000 INTL 20200717)
+[    0.011610] ACPI: HPET 0x00000000753B7000 000038 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.011611] ACPI: APIC 0x00000000753B6000 0001DC (v05 ALASKA A M I    01072009 AMI  01000013)
+[    0.011612] ACPI: SSDT 0x0000000075328000 001F1A (v02 ALASKA Ther_Rvp 00001000 INTL 20200717)
+[    0.011614] ACPI: UEFI 0x00000000757FF000 000048 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.011615] ACPI: NHLT 0x0000000075327000 00002D (v00 ALASKA A M I    01072009 AMI  01000013)
+[    0.011617] ACPI: LPIT 0x0000000075326000 0000CC (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.011618] ACPI: SSDT 0x0000000075322000 002A83 (v02 ALASKA PtidDevc 00001000 INTL 20200717)
+[    0.011620] ACPI: SSDT 0x000000007531F000 002357 (v02 ALASKA TbtTypeC 00000000 INTL 20200717)
+[    0.011621] ACPI: DBGP 0x000000007531E000 000034 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.011623] ACPI: DBG2 0x000000007531D000 000054 (v00 ALASKA A M I    01072009 AMI  01000013)
+[    0.011624] ACPI: DMAR 0x000000007531C000 000088 (v02 INTEL  EDK2     00000002      01000013)
+[    0.011625] ACPI: SSDT 0x000000007531B000 000DF7 (v02 INTEL  xh_adls3 00000000 INTL 20200717)
+[    0.011627] ACPI: SSDT 0x0000000075317000 003AEA (v02 SocGpe SocGpe   00003000 INTL 20200717)
+[    0.011628] ACPI: SSDT 0x0000000075314000 002B2A (v02 SocCmn SocCmn   00003000 INTL 20200717)
+[    0.011630] ACPI: SSDT 0x0000000075313000 000144 (v02 Intel  ADebTabl 00001000 INTL 20200717)
+[    0.011631] ACPI: BGRT 0x0000000075312000 000038 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.011633] ACPI: TPM2 0x0000000075311000 00004C (v04 ALASKA A M I    00000001 AMI  00000000)
+[    0.011634] ACPI: PHAT 0x0000000075310000 0005ED (v00 ALASKA A M I    00000005 MSFT 0100000D)
+[    0.011636] ACPI: WSMT 0x0000000075325000 000028 (v01 ALASKA A M I    01072009 AMI  00010013)
+[    0.011637] ACPI: FPDT 0x000000007530F000 000044 (v01 ALASKA A M I    01072009 AMI  01000013)
+[    0.011638] ACPI: Reserving FACP table memory at [mem 0x753b4000-0x753b4113]
+[    0.011639] ACPI: Reserving DSDT table memory at [mem 0x75338000-0x753b307e]
+[    0.011640] ACPI: Reserving FACS table memory at [mem 0x758cd000-0x758cd03f]
+[    0.011640] ACPI: Reserving MCFG table memory at [mem 0x753b5000-0x753b503b]
+[    0.011641] ACPI: Reserving FIDT table memory at [mem 0x75337000-0x7533709b]
+[    0.011641] ACPI: Reserving SSDT table memory at [mem 0x75331000-0x75336cdf]
+[    0.011642] ACPI: Reserving SSDT table memory at [mem 0x7532e000-0x753309e3]
+[    0.011643] ACPI: Reserving SSDT table memory at [mem 0x7532a000-0x7532d315]
+[    0.011643] ACPI: Reserving HPET table memory at [mem 0x753b7000-0x753b7037]
+[    0.011644] ACPI: Reserving APIC table memory at [mem 0x753b6000-0x753b61db]
+[    0.011644] ACPI: Reserving SSDT table memory at [mem 0x75328000-0x75329f19]
+[    0.011645] ACPI: Reserving UEFI table memory at [mem 0x757ff000-0x757ff047]
+[    0.011645] ACPI: Reserving NHLT table memory at [mem 0x75327000-0x7532702c]
+[    0.011646] ACPI: Reserving LPIT table memory at [mem 0x75326000-0x753260cb]
+[    0.011647] ACPI: Reserving SSDT table memory at [mem 0x75322000-0x75324a82]
+[    0.011647] ACPI: Reserving SSDT table memory at [mem 0x7531f000-0x75321356]
+[    0.011648] ACPI: Reserving DBGP table memory at [mem 0x7531e000-0x7531e033]
+[    0.011648] ACPI: Reserving DBG2 table memory at [mem 0x7531d000-0x7531d053]
+[    0.011649] ACPI: Reserving DMAR table memory at [mem 0x7531c000-0x7531c087]
+[    0.011649] ACPI: Reserving SSDT table memory at [mem 0x7531b000-0x7531bdf6]
+[    0.011650] ACPI: Reserving SSDT table memory at [mem 0x75317000-0x7531aae9]
+[    0.011650] ACPI: Reserving SSDT table memory at [mem 0x75314000-0x75316b29]
+[    0.011651] ACPI: Reserving SSDT table memory at [mem 0x75313000-0x75313143]
+[    0.011652] ACPI: Reserving BGRT table memory at [mem 0x75312000-0x75312037]
+[    0.011652] ACPI: Reserving TPM2 table memory at [mem 0x75311000-0x7531104b]
+[    0.011653] ACPI: Reserving PHAT table memory at [mem 0x75310000-0x753105ec]
+[    0.011653] ACPI: Reserving WSMT table memory at [mem 0x75325000-0x75325027]
+[    0.011654] ACPI: Reserving FPDT table memory at [mem 0x7530f000-0x7530f043]
+[    0.011670] ACPI: Local APIC address 0xfee00000
+[    0.011814] No NUMA configuration found
+[    0.011814] Faking a node at [mem 0x0000000000000000-0x000000047fbfffff]
+[    0.011818] NODE_DATA(0) allocated [mem 0x47fbd6000-0x47fbfffff]
+[    0.011923] Zone ranges:
+[    0.011923]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[    0.011924]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[    0.011924]   Normal   [mem 0x0000000100000000-0x000000047fbfffff]
+[    0.011925]   Device   empty
+[    0.011925] Movable zone start for each node
+[    0.011926] Early memory node ranges
+[    0.011927]   node   0: [mem 0x0000000000001000-0x000000000005dfff]
+[    0.011927]   node   0: [mem 0x000000000005f000-0x000000000009ffff]
+[    0.011927]   node   0: [mem 0x0000000000100000-0x00000000721e3fff]
+[    0.011928]   node   0: [mem 0x0000000075fff000-0x0000000075ffffff]
+[    0.011928]   node   0: [mem 0x0000000100000000-0x000000047fbfffff]
+[    0.012018] Zeroed struct page in unavailable ranges: 25213 pages
+[    0.012019] Initmem setup node 0 [mem 0x0000000000001000-0x000000047fbfffff]
+[    0.012020] On node 0 totalpages: 4136323
+[    0.012020]   DMA zone: 64 pages used for memmap
+[    0.012021]   DMA zone: 26 pages reserved
+[    0.012021]   DMA zone: 3998 pages, LIFO batch:0
+[    0.012040]   DMA32 zone: 7240 pages used for memmap
+[    0.012041]   DMA32 zone: 463333 pages, LIFO batch:63
+[    0.016052]   Normal zone: 57328 pages used for memmap
+[    0.016053]   Normal zone: 3668992 pages, LIFO batch:63
+[    0.041380] ACPI: PM-Timer IO Port: 0x1808
+[    0.041381] ACPI: Local APIC address 0xfee00000
+[    0.041385] ACPI: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[    0.041386] ACPI: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[    0.041386] ACPI: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[    0.041386] ACPI: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[    0.041387] ACPI: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[    0.041387] ACPI: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[    0.041388] ACPI: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[    0.041388] ACPI: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[    0.041388] ACPI: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[    0.041389] ACPI: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[    0.041389] ACPI: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[    0.041389] ACPI: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[    0.041390] ACPI: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[    0.041390] ACPI: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[    0.041390] ACPI: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[    0.041391] ACPI: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[    0.041391] ACPI: LAPIC_NMI (acpi_id[0x11] high edge lint[0x1])
+[    0.041392] ACPI: LAPIC_NMI (acpi_id[0x12] high edge lint[0x1])
+[    0.041392] ACPI: LAPIC_NMI (acpi_id[0x13] high edge lint[0x1])
+[    0.041392] ACPI: LAPIC_NMI (acpi_id[0x14] high edge lint[0x1])
+[    0.041393] ACPI: LAPIC_NMI (acpi_id[0x15] high edge lint[0x1])
+[    0.041393] ACPI: LAPIC_NMI (acpi_id[0x16] high edge lint[0x1])
+[    0.041393] ACPI: LAPIC_NMI (acpi_id[0x17] high edge lint[0x1])
+[    0.041394] ACPI: LAPIC_NMI (acpi_id[0x00] high edge lint[0x1])
+[    0.041417] IOAPIC[0]: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[    0.041418] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[    0.041419] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[    0.041420] ACPI: IRQ0 used by override.
+[    0.041420] ACPI: IRQ9 used by override.
+[    0.041421] Using ACPI (MADT) for SMP configuration information
+[    0.041422] ACPI: HPET id: 0x8086a201 base: 0xfed00000
+[    0.041426] e820: update [mem 0x6bacb000-0x6bd0bfff] usable ==> reserved
+[    0.041431] TSC deadline timer available
+[    0.041431] smpboot: Allowing 16 CPUs, 0 hotplug CPUs
+[    0.041442] PM: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[    0.041443] PM: Registered nosave memory: [mem 0x0005e000-0x0005efff]
+[    0.041443] PM: Registered nosave memory: [mem 0x000a0000-0x000fffff]
+[    0.041444] PM: Registered nosave memory: [mem 0x6bacb000-0x6bd0bfff]
+[    0.041445] PM: Registered nosave memory: [mem 0x70261000-0x70261fff]
+[    0.041446] PM: Registered nosave memory: [mem 0x721e4000-0x752e3fff]
+[    0.041446] PM: Registered nosave memory: [mem 0x752e4000-0x753b7fff]
+[    0.041446] PM: Registered nosave memory: [mem 0x753b8000-0x758cdfff]
+[    0.041447] PM: Registered nosave memory: [mem 0x758ce000-0x75ffefff]
+[    0.041448] PM: Registered nosave memory: [mem 0x76000000-0x79ffffff]
+[    0.041448] PM: Registered nosave memory: [mem 0x7a000000-0x7a9fffff]
+[    0.041448] PM: Registered nosave memory: [mem 0x7aa00000-0x7abfffff]
+[    0.041449] PM: Registered nosave memory: [mem 0x7ac00000-0x7affffff]
+[    0.041449] PM: Registered nosave memory: [mem 0x7b000000-0x803fffff]
+[    0.041449] PM: Registered nosave memory: [mem 0x80400000-0xbfffffff]
+[    0.041450] PM: Registered nosave memory: [mem 0xc0000000-0xcfffffff]
+[    0.041450] PM: Registered nosave memory: [mem 0xd0000000-0xfdffffff]
+[    0.041450] PM: Registered nosave memory: [mem 0xfe000000-0xfe010fff]
+[    0.041451] PM: Registered nosave memory: [mem 0xfe011000-0xfebfffff]
+[    0.041451] PM: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[    0.041452] PM: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+[    0.041452] PM: Registered nosave memory: [mem 0xfed00000-0xfed00fff]
+[    0.041452] PM: Registered nosave memory: [mem 0xfed01000-0xfed1ffff]
+[    0.041453] PM: Registered nosave memory: [mem 0xfed20000-0xfed7ffff]
+[    0.041453] PM: Registered nosave memory: [mem 0xfed80000-0xfedfffff]
+[    0.041453] PM: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[    0.041454] PM: Registered nosave memory: [mem 0xfee01000-0xfeffffff]
+[    0.041454] PM: Registered nosave memory: [mem 0xff000000-0xffffffff]
+[    0.041455] [mem 0x80400000-0xbfffffff] available for PCI devices
+[    0.041456] Booting paravirtualized kernel on bare hardware
+[    0.041458] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[    0.041464] random: get_random_bytes called from start_kernel+0x8d/0x43d with crng_init=0
+[    0.041467] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:16 nr_cpu_ids:16 nr_node_ids:1
+[    0.042050] percpu: Embedded 51 pages/cpu s172032 r8192 d28672 u262144
+[    0.042053] pcpu-alloc: s172032 r8192 d28672 u262144 alloc=1*2097152
+[    0.042053] pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 12 13 14 15 
+[    0.042065] Built 1 zonelists, mobility grouping on.  Total pages: 4071665
+[    0.042066] Policy zone: Normal
+[    0.042067] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-4.19.239-llvm10-sfi-workaround root=UUID=e4dec1b8-2e34-4746-9de8-faf8ef8aac57 ro rootdelay=60 i915.force_probe=4680
+[    0.077300] Memory: 16050460K/16545292K available (14364K kernel code, 2604K rwdata, 4496K rodata, 2608K init, 4864K bss, 494832K reserved, 0K cma-reserved)
+[    0.077348] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=16, Nodes=1
+[    0.077352] ftrace: allocating 40218 entries in 158 pages
+[    0.085142] rcu: Hierarchical RCU implementation.
+[    0.085143] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=16.
+[    0.085144] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=16
+[    0.085875] NR_IRQS: 524544, nr_irqs: 2184, preallocated irqs: 16
+[    0.086099] Console: colour dummy device 80x25
+[    0.086183] console [tty0] enabled
+[    0.086193] ACPI: Core revision 20180810
+[    0.086467] clocksource: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 99544814920 ns
+[    0.086485] hpet clockevent registered
+[    0.086505] APIC: Switch to symmetric I/O mode setup
+[    0.086507] DMAR: Host address width 39
+[    0.086508] DMAR: DRHD base: 0x000000fed90000 flags: 0x0
+[    0.086511] DMAR: dmar0: reg_base_addr fed90000 ver 4:0 cap 1c0000c406f0462 ecap 29a08f0505e
+[    0.086512] DMAR: DRHD base: 0x000000fed91000 flags: 0x1
+[    0.086515] DMAR: dmar1: reg_base_addr fed91000 ver 5:0 cap 8d2008c40660462 ecap f050da
+[    0.086516] DMAR: RMRR base: 0x0000007c000000 end: 0x000000803fffff
+[    0.086518] DMAR-IR: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[    0.086518] DMAR-IR: HPET id 0 under DRHD base 0xfed91000
+[    0.086519] DMAR-IR: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[    0.087415] DMAR-IR: Enabled IRQ remapping in x2apic mode
+[    0.087417] x2apic enabled
+[    0.087424] Switched APIC routing to cluster x2apic.
+[    0.089752] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[    0.106493] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x6a464ae9873, max_idle_ns: 881590529744 ns
+[    0.106501] Calibrating delay loop (skipped), value calculated using timer frequency.. 7372.80 BogoMIPS (lpj=14745600)
+[    0.106502] pid_max: default: 32768 minimum: 301
+[    0.107059] Security Framework initialized
+[    0.107060] Yama: becoming mindful.
+[    0.107072] AppArmor: AppArmor initialized
+[    0.108837] Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes)
+[    0.109719] Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes)
+[    0.109754] Mount-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.109782] Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes)
+[    0.109927] x86/tme: not enabled by BIOS
+[    0.109928] ENERGY_PERF_BIAS: Set to 'normal', was 'performance'
+[    0.109929] ENERGY_PERF_BIAS: View and update with x86_energy_perf_policy(8)
+[    0.109933] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.109954] CPU0: Thermal monitoring enabled (TM1)
+[    0.110022] process: using mwait in idle threads
+[    0.110024] Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+[    0.110024] Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+[    0.110025] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[    0.110027] Spectre V2 : Mitigation: Enhanced IBRS
+[    0.110027] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[    0.110031] Spectre V2 : mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[    0.110032] Speculative Store Bypass: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[    0.112590] Freeing SMP alternatives memory: 48K
+[    0.115431] ===========
+               keteag init kernel
+               ==========
+[    0.202143] ===========
+               keteag physmap init
+               ==========
+[    0.202202] smpboot: CPU0: 12th Gen Intel(R) Core(TM) i5-12600K (family: 0x6, model: 0x97, stepping: 0x2)
+[    0.202248] Performance Events: no PEBS fmt4+, generic architected perfmon, full-width counters, Intel PMU driver.
+[    0.202252] ... version:                5
+[    0.202252] ... bit width:              48
+[    0.202253] ... generic registers:      6
+[    0.202254] ... value mask:             0000ffffffffffff
+[    0.202254] ... max period:             00007fffffffffff
+[    0.202255] ... fixed-purpose events:   3
+[    0.202256] ... event mask:             000000070000003f
+[    0.202275] rcu: Hierarchical SRCU implementation.
+[    0.202495] random: crng done (trusting CPU's manufacturer)
+[    0.202495] NMI watchdog: Enabled. Permanently consumes one hw-PMU counter.
+[    0.202495] smp: Bringing up secondary CPUs ...
+[    0.202495] x86: Booting SMP configuration:
+[    0.202495] .... node  #0, CPUs:        #1
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.202495]   #2
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.203491]   #3
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.204403]   #4
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.207454]   #5
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.208338]   #6
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.211348]   #7
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.212330]   #8
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.215200]   #9
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.216305]  #10
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.219020]  #11
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.220299]  #12
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.223346]  #13
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.224901]  #14
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.228243]  #15
+[    0.000409] x86/cpu: Activated the Intel User Mode Instruction Prevention (UMIP) CPU feature
+[    0.230680] smp: Brought up 1 node, 16 CPUs
+[    0.230680] smpboot: Max logical packages: 1
+[    0.230680] smpboot: Total of 16 processors activated (117964.80 BogoMIPS)
+[    0.234788] devtmpfs: initialized
+[    0.234788] x86/mm: Memory block size: 128MB
+[    0.235136] PM: Registering ACPI NVS region [mem 0x753b8000-0x758cdfff] (5332992 bytes)
+[    0.235136] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[    0.235136] futex hash table entries: 4096 (order: 6, 262144 bytes)
+[    0.235136] pinctrl core: initialized pinctrl subsystem
+[    0.235136] RTC time:  2:28:03, date: 05/04/22
+[    0.235136] NET: Registered protocol family 16
+[    0.235136] audit: initializing netlink subsys (disabled)
+[    0.235136] audit: type=2000 audit(1651631283.152:1): state=initialized audit_enabled=0 res=1
+[    0.235136] cpuidle: using governor ladder
+[    0.235136] cpuidle: using governor menu
+[    0.235136] ACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[    0.235136] ACPI: bus type PCI registered
+[    0.235136] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+[    0.235136] PCI: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xc0000000-0xcfffffff] (base 0xc0000000)
+[    0.235136] PCI: MMCONFIG at [mem 0xc0000000-0xcfffffff] reserved in E820
+[    0.235136] PCI: Using configuration type 1 for base access
+[    0.235204] HugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[    0.235204] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[    0.235205] fbcon: Taking over console
+[    0.235205] ACPI: Added _OSI(Module Device)
+[    0.235205] ACPI: Added _OSI(Processor Device)
+[    0.235205] ACPI: Added _OSI(3.0 _SCP Extensions)
+[    0.235205] ACPI: Added _OSI(Processor Aggregator Device)
+[    0.235205] ACPI: Added _OSI(Linux-Dell-Video)
+[    0.235205] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[    0.287282] ACPI: 11 ACPI AML tables successfully acquired and loaded
+[    0.295422] ACPI: Dynamic OEM Table Load:
+[    0.295428] ACPI: SSDT 0xFFFF88F868388800 0001AB (v02 PmRef  Cpu0Psd  00003000 INTL 20200717)
+[    0.295570] ACPI: \_SB_.PR00: _OSC native thermal LVT Acked
+[    0.297301] ACPI: Dynamic OEM Table Load:
+[    0.297305] ACPI: SSDT 0xFFFF88F86837A800 000394 (v02 PmRef  Cpu0Cst  00003001 INTL 20200717)
+[    0.297569] ACPI: Dynamic OEM Table Load:
+[    0.297572] ACPI: SSDT 0xFFFF88F868AD8800 0006EC (v02 PmRef  Cpu0Ist  00003000 INTL 20200717)
+[    0.297897] ACPI: Dynamic OEM Table Load:
+[    0.297900] ACPI: SSDT 0xFFFF88F868ADB000 00044D (v02 PmRef  Cpu0Hwp  00003000 INTL 20200717)
+[    0.298376] ACPI: Dynamic OEM Table Load:
+[    0.298380] ACPI: SSDT 0xFFFF88F868B26000 001BAF (v02 PmRef  ApIst    00003000 INTL 20200717)
+[    0.299067] ACPI: Dynamic OEM Table Load:
+[    0.299070] ACPI: SSDT 0xFFFF88F868B20000 001038 (v02 PmRef  ApHwp    00003000 INTL 20200717)
+[    0.299607] ACPI: Dynamic OEM Table Load:
+[    0.299610] ACPI: SSDT 0xFFFF88F868B22000 001349 (v02 PmRef  ApPsd    00003000 INTL 20200717)
+[    0.300160] ACPI: Dynamic OEM Table Load:
+[    0.300163] ACPI: SSDT 0xFFFF88F868390000 000FBB (v02 PmRef  ApCst    00003000 INTL 20200717)
+[    0.304930] ACPI: Interpreter enabled
+[    0.304963] ACPI: (supports S0 S3 S4 S5)
+[    0.304963] ACPI: Using IOAPIC for interrupt routing
+[    0.304991] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[    0.305842] ACPI: Enabled 6 GPEs in block 00 to 7F
+[    0.323377] ACPI: Power Resource [WRST] (on)
+[    0.330417] ACPI: Power Resource [FN00] (off)
+[    0.330458] ACPI: Power Resource [FN01] (off)
+[    0.330498] ACPI: Power Resource [FN02] (off)
+[    0.330535] ACPI: Power Resource [FN03] (off)
+[    0.330574] ACPI: Power Resource [FN04] (off)
+[    0.331089] ACPI: Power Resource [PIN] (off)
+[    0.331320] ACPI: PCI Root Bridge [PC00] (domain 0000 [bus 00-fe])
+[    0.331323] acpi PNP0A08:00: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI]
+[    0.331497] acpi PNP0A08:00: _OSC: platform does not support [PCIeHotplug SHPCHotplug PME]
+[    0.331662] acpi PNP0A08:00: _OSC: OS now controls [AER PCIeCapability LTR]
+[    0.331662] acpi PNP0A08:00: FADT indicates ASPM is unsupported, using BIOS configuration
+[    0.332435] PCI host bridge to bus 0000:00
+[    0.332436] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+[    0.332437] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+[    0.332438] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+[    0.332438] pci_bus 0000:00: root bus resource [mem 0x80400000-0xbfffffff window]
+[    0.332439] pci_bus 0000:00: root bus resource [mem 0x4000000000-0x7fffffffff window]
+[    0.332440] pci_bus 0000:00: root bus resource [bus 00-fe]
+[    0.332447] pci 0000:00:00.0: [8086:4648] type 00 class 0x060000
+[    0.332581] pci 0000:00:02.0: [8086:4680] type 00 class 0x030000
+[    0.332590] pci 0000:00:02.0: reg 0x10: [mem 0x6000000000-0x6000ffffff 64bit]
+[    0.332594] pci 0000:00:02.0: reg 0x18: [mem 0x4000000000-0x400fffffff 64bit pref]
+[    0.332597] pci 0000:00:02.0: reg 0x20: [io  0x4000-0x403f]
+[    0.332607] pci 0000:00:02.0: BAR 2: assigned to efifb
+[    0.332629] pci 0000:00:02.0: reg 0x344: [mem 0x00000000-0x00ffffff 64bit]
+[    0.332630] pci 0000:00:02.0: VF(n) BAR0 space: [mem 0x00000000-0x06ffffff 64bit] (contains BAR0 for 7 VFs)
+[    0.332633] pci 0000:00:02.0: reg 0x34c: [mem 0x00000000-0x1fffffff 64bit pref]
+[    0.332634] pci 0000:00:02.0: VF(n) BAR2 space: [mem 0x00000000-0xdfffffff 64bit pref] (contains BAR2 for 7 VFs)
+[    0.332736] pci 0000:00:06.0: [8086:464d] type 01 class 0x060400
+[    0.332789] pci 0000:00:06.0: PME# supported from D0 D3hot D3cold
+[    0.332800] pci 0000:00:06.0: PTM enabled (root), 4ns granularity
+[    0.332962] pci 0000:00:14.0: [8086:7ae0] type 00 class 0x0c0330
+[    0.332986] pci 0000:00:14.0: reg 0x10: [mem 0x6001100000-0x600110ffff 64bit]
+[    0.333060] pci 0000:00:14.0: PME# supported from D3hot D3cold
+[    0.333372] pci 0000:00:14.2: [8086:7aa7] type 00 class 0x050000
+[    0.333394] pci 0000:00:14.2: reg 0x10: [mem 0x6001114000-0x6001117fff 64bit]
+[    0.333406] pci 0000:00:14.2: reg 0x18: [mem 0x600111f000-0x600111ffff 64bit]
+[    0.333598] pci 0000:00:15.0: [8086:7acc] type 00 class 0x0c8000
+[    0.333629] pci 0000:00:15.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    0.333865] pci 0000:00:15.2: [8086:7ace] type 00 class 0x0c8000
+[    0.333893] pci 0000:00:15.2: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    0.334137] pci 0000:00:15.3: [8086:7acf] type 00 class 0x0c8000
+[    0.334165] pci 0000:00:15.3: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    0.334376] pci 0000:00:16.0: [8086:7ae8] type 00 class 0x078000
+[    0.334403] pci 0000:00:16.0: reg 0x10: [mem 0x600111b000-0x600111bfff 64bit]
+[    0.334482] pci 0000:00:16.0: PME# supported from D3hot
+[    0.334637] pci 0000:00:17.0: [8086:7ae2] type 00 class 0x010601
+[    0.334656] pci 0000:00:17.0: reg 0x10: [mem 0x80600000-0x80601fff]
+[    0.334666] pci 0000:00:17.0: reg 0x14: [mem 0x80603000-0x806030ff]
+[    0.334673] pci 0000:00:17.0: reg 0x18: [io  0x4090-0x4097]
+[    0.334680] pci 0000:00:17.0: reg 0x1c: [io  0x4080-0x4083]
+[    0.334688] pci 0000:00:17.0: reg 0x20: [io  0x4060-0x407f]
+[    0.334695] pci 0000:00:17.0: reg 0x24: [mem 0x80602000-0x806027ff]
+[    0.334737] pci 0000:00:17.0: PME# supported from D3hot
+[    0.334902] pci 0000:00:19.0: [8086:7afc] type 00 class 0x0c8000
+[    0.334931] pci 0000:00:19.0: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    0.335177] pci 0000:00:19.1: [8086:7afd] type 00 class 0x0c8000
+[    0.335212] pci 0000:00:19.1: reg 0x10: [mem 0x00000000-0x00000fff 64bit]
+[    0.335423] pci 0000:00:1c.0: [8086:7abc] type 01 class 0x060400
+[    0.335523] pci 0000:00:1c.0: PME# supported from D0 D3hot D3cold
+[    0.335544] pci 0000:00:1c.0: PTM enabled (root), 4ns granularity
+[    0.335697] pci 0000:00:1f.0: [8086:7a84] type 00 class 0x060100
+[    0.335907] pci 0000:00:1f.3: [8086:7ad0] type 00 class 0x040300
+[    0.335962] pci 0000:00:1f.3: reg 0x10: [mem 0x6001110000-0x6001113fff 64bit]
+[    0.336013] pci 0000:00:1f.3: reg 0x20: [mem 0x6001000000-0x60010fffff 64bit]
+[    0.336117] pci 0000:00:1f.3: PME# supported from D3hot D3cold
+[    0.336280] pci 0000:00:1f.4: [8086:7aa3] type 00 class 0x0c0500
+[    0.336303] pci 0000:00:1f.4: reg 0x10: [mem 0x6001118000-0x60011180ff 64bit]
+[    0.336329] pci 0000:00:1f.4: reg 0x20: [io  0xefa0-0xefbf]
+[    0.336469] pci 0000:00:1f.5: [8086:7aa4] type 00 class 0x0c8000
+[    0.336488] pci 0000:00:1f.5: reg 0x10: [mem 0xfe010000-0xfe010fff]
+[    0.336671] pci 0000:01:00.0: [8086:f1aa] type 00 class 0x010802
+[    0.336691] pci 0000:01:00.0: reg 0x10: [mem 0x80500000-0x80503fff 64bit]
+[    0.336793] pci 0000:01:00.0: reg 0x1ac: [mem 0x00000000-0x00003fff 64bit]
+[    0.336793] pci 0000:01:00.0: VF(n) BAR0 space: [mem 0x00000000-0x0001ffff 64bit] (contains BAR0 for 8 VFs)
+[    0.336876] pci 0000:00:06.0: PCI bridge to [bus 01]
+[    0.336879] pci 0000:00:06.0:   bridge window [mem 0x80500000-0x805fffff]
+[    0.336937] pci 0000:02:00.0: [10ec:8168] type 00 class 0x020000
+[    0.336975] pci 0000:02:00.0: reg 0x10: [io  0x3000-0x30ff]
+[    0.337008] pci 0000:02:00.0: reg 0x18: [mem 0x80404000-0x80404fff 64bit]
+[    0.337028] pci 0000:02:00.0: reg 0x20: [mem 0x80400000-0x80403fff 64bit]
+[    0.337148] pci 0000:02:00.0: supports D1 D2
+[    0.337148] pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+[    0.337264] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.337267] pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+[    0.337269] pci 0000:00:1c.0:   bridge window [mem 0x80400000-0x804fffff]
+[    0.339702] ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.339766] ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 10 11 12 14 15) *1
+[    0.339828] ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.339890] ACPI: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.339952] ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.340014] ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.340075] ACPI: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.340137] ACPI: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 11 12 14 15) *0
+[    0.341409] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+[    0.341409] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[    0.341409] pci 0000:00:02.0: vgaarb: bridge control possible
+[    0.341409] vgaarb: loaded
+[    0.341409] SCSI subsystem initialized
+[    0.341409] libata version 3.00 loaded.
+[    0.341409] ACPI: bus type USB registered
+[    0.341409] usbcore: registered new interface driver usbfs
+[    0.341409] usbcore: registered new interface driver hub
+[    0.341409] usbcore: registered new device driver usb
+[    0.341409] pps_core: LinuxPPS API ver. 1 registered
+[    0.341409] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.341409] PTP clock support registered
+[    0.341409] EDAC MC: Ver: 3.0.0
+[    0.341409] Registered efivars operations
+[    0.341409] PCI: Using ACPI for IRQ routing
+[    0.347403] PCI: pci_cache_line_size set to 64 bytes
+[    0.347527] pci 0000:00:1f.5: can't claim BAR 0 [mem 0xfe010000-0xfe010fff]: no compatible bridge window
+[    0.347646] e820: reserve RAM buffer [mem 0x0005e000-0x0005ffff]
+[    0.347647] e820: reserve RAM buffer [mem 0x6bacb000-0x6bffffff]
+[    0.347647] e820: reserve RAM buffer [mem 0x70261000-0x73ffffff]
+[    0.347648] e820: reserve RAM buffer [mem 0x721e4000-0x73ffffff]
+[    0.347648] e820: reserve RAM buffer [mem 0x76000000-0x77ffffff]
+[    0.347649] e820: reserve RAM buffer [mem 0x47fc00000-0x47fffffff]
+[    0.347687] NetLabel: Initializing
+[    0.347688] NetLabel:  domain hash size = 128
+[    0.347688] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+[    0.347696] NetLabel:  unlabeled traffic allowed by default
+[    0.350893] hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[    0.350895] hpet0: 8 comparators, 64-bit 19.200000 MHz counter
+[    0.352931] clocksource: Switched to clocksource tsc-early
+[    0.355235] VFS: Disk quotas dquot_6.6.0
+[    0.355242] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[    0.355289] AppArmor: AppArmor Filesystem Enabled
+[    0.355301] pnp: PnP ACPI init
+[    0.355437] system 00:00: [io  0x0a00-0x0a1f] has been reserved
+[    0.355438] system 00:00: [io  0x0a20-0x0a2f] has been reserved
+[    0.355438] system 00:00: [io  0x0a30-0x0a3f] has been reserved
+[    0.355440] system 00:00: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.355747] pnp 00:01: [dma 0 disabled]
+[    0.355761] pnp 00:01: Plug and Play ACPI device, IDs PNP0501 (active)
+[    0.355832] system 00:02: [io  0x0680-0x069f] has been reserved
+[    0.355833] system 00:02: [io  0x164e-0x164f] has been reserved
+[    0.355834] system 00:02: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.355900] system 00:03: [io  0x1854-0x1857] has been reserved
+[    0.355901] system 00:03: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.357230] pnp 00:04: disabling [mem 0xc0000000-0xcfffffff] because it overlaps 0000:00:02.0 BAR 9 [mem 0x00000000-0xdfffffff 64bit pref]
+[    0.357241] system 00:04: [mem 0xfedc0000-0xfedc7fff] has been reserved
+[    0.357242] system 00:04: [mem 0xfeda0000-0xfeda0fff] has been reserved
+[    0.357243] system 00:04: [mem 0xfeda1000-0xfeda1fff] has been reserved
+[    0.357244] system 00:04: [mem 0xfed20000-0xfed7ffff] could not be reserved
+[    0.357244] system 00:04: [mem 0xfed90000-0xfed93fff] could not be reserved
+[    0.357245] system 00:04: [mem 0xfed45000-0xfed8ffff] could not be reserved
+[    0.357246] system 00:04: [mem 0xfee00000-0xfeefffff] could not be reserved
+[    0.357247] system 00:04: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.357744] system 00:05: [io  0x2000-0x20fe] has been reserved
+[    0.357745] system 00:05: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.357983] system 00:06: Plug and Play ACPI device, IDs PNP0c02 (active)
+[    0.358201] pnp: PnP ACPI: found 7 devices
+[    0.363159] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[    0.363162] pci_bus 0000:00: max bus depth: 1 pci_try_num: 2
+[    0.363166] pci 0000:00:02.0: BAR 9: assigned [mem 0x4020000000-0x40ffffffff 64bit pref]
+[    0.363169] pci 0000:00:02.0: BAR 7: assigned [mem 0x4010000000-0x4016ffffff 64bit]
+[    0.363171] pci 0000:00:15.0: BAR 0: assigned [mem 0x4017000000-0x4017000fff 64bit]
+[    0.363230] pci 0000:00:15.2: BAR 0: assigned [mem 0x4017001000-0x4017001fff 64bit]
+[    0.363245] pci 0000:00:15.3: BAR 0: assigned [mem 0x4017002000-0x4017002fff 64bit]
+[    0.363258] pci 0000:00:19.0: BAR 0: assigned [mem 0x4017003000-0x4017003fff 64bit]
+[    0.363272] pci 0000:00:19.1: BAR 0: assigned [mem 0x4017004000-0x4017004fff 64bit]
+[    0.363291] pci 0000:00:1f.5: BAR 0: assigned [mem 0x80604000-0x80604fff]
+[    0.363301] pci 0000:01:00.0: BAR 7: assigned [mem 0x80504000-0x80523fff 64bit]
+[    0.363304] pci 0000:00:06.0: PCI bridge to [bus 01]
+[    0.363306] pci 0000:00:06.0:   bridge window [mem 0x80500000-0x805fffff]
+[    0.363309] pci 0000:00:1c.0: PCI bridge to [bus 02]
+[    0.363317] pci 0000:00:1c.0:   bridge window [io  0x3000-0x3fff]
+[    0.363321] pci 0000:00:1c.0:   bridge window [mem 0x80400000-0x804fffff]
+[    0.363327] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+[    0.363328] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+[    0.363328] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+[    0.363329] pci_bus 0000:00: resource 7 [mem 0x80400000-0xbfffffff window]
+[    0.363329] pci_bus 0000:00: resource 8 [mem 0x4000000000-0x7fffffffff window]
+[    0.363329] pci_bus 0000:01: resource 1 [mem 0x80500000-0x805fffff]
+[    0.363330] pci_bus 0000:02: resource 0 [io  0x3000-0x3fff]
+[    0.363330] pci_bus 0000:02: resource 1 [mem 0x80400000-0x804fffff]
+[    0.363418] NET: Registered protocol family 2
+[    0.363609] IP idents hash table entries: 262144 (order: 9, 2097152 bytes)
+[    0.364322] tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes)
+[    0.364343] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.364423] TCP bind hash table entries: 65536 (order: 8, 1048576 bytes)
+[    0.364507] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.364537] UDP hash table entries: 8192 (order: 6, 262144 bytes)
+[    0.364566] UDP-Lite hash table entries: 8192 (order: 6, 262144 bytes)
+[    0.364615] NET: Registered protocol family 1
+[    0.364618] NET: Registered protocol family 44
+[    0.364624] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[    0.364940] PCI: CLS 64 bytes, default 64
+[    0.364961] Unpacking initramfs...
+[    0.606652] Freeing initrd memory: 32492K
+[    0.666539] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+[    0.666546] software IO TLB: mapped [mem 0x67acb000-0x6bacb000] (64MB)
+[    0.666790] kvm: already loaded the other module
+[    0.666791] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x6a464ae9873, max_idle_ns: 881590529744 ns
+[    0.666805] clocksource: Switched to clocksource tsc
+[    0.666817] platform rtc_cmos: registered platform RTC device (no PNP device found)
+[    0.666937] Scanning for low memory corruption every 60 seconds
+[    0.667319] Initialise system trusted keyrings
+[    0.667349] workingset: timestamp_bits=36 max_order=22 bucket_order=0
+[    0.667801] zbud: loaded
+[    0.667999] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+[    0.668077] fuse init (API version 7.27)
+[    0.668582] Key type asymmetric registered
+[    0.668583] Asymmetric key parser 'x509' registered
+[    0.668586] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+[    0.668595] io scheduler noop registered
+[    0.668595] io scheduler deadline registered
+[    0.668606] io scheduler cfq registered (default)
+[    0.668607] io scheduler mq-deadline registered
+[    0.668869] pcieport 0000:00:06.0: AER enabled with IRQ 122
+[    0.668889] dpc 0000:00:06.0:pcie008: DPC error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    0.669042] pcieport 0000:00:1c.0: AER enabled with IRQ 123
+[    0.669075] dpc 0000:00:1c.0:pcie008: DPC error containment capabilities: Int Msg #0, RPExt+ PoisonedTLP+ SwTrigger+ RP PIO Log 4, DL_ActiveErr+
+[    0.669124] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+[    0.669156] efifb: probing for efifb
+[    0.669163] efifb: framebuffer at 0x4000000000, using 3072k, total 3072k
+[    0.669164] efifb: mode is 1024x768x32, linelength=4096, pages=1
+[    0.669165] efifb: scrolling: redraw
+[    0.669166] efifb: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[    0.669196] Console: switching to colour frame buffer device 128x48
+[    0.670025] fb0: EFI VGA frame buffer device
+[    0.670035] intel_idle: does not run on family 6 model 151
+[    0.670111] input: Sleep Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0E:00/input/input0
+[    0.670128] ACPI: Sleep Button [SLPB]
+[    0.670147] input: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[    0.670162] ACPI: Power Button [PWRB]
+[    0.670177] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input2
+[    0.670193] ACPI: Power Button [PWRF]
+[    0.670702] Monitor-Mwait will be used to enter C-1 state
+[    0.670706] Monitor-Mwait will be used to enter C-2 state
+[    0.670709] Monitor-Mwait will be used to enter C-3 state
+[    0.673838] thermal LNXTHERM:00: registered as thermal_zone0
+[    0.673849] ACPI: Thermal Zone [TZ00] (28 C)
+[    0.673976] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[    0.696254] 00:01: ttyS0 at I/O 0x3f8 (irq = 4, base_baud = 115200) is a 16550A
+[    0.697184] Linux agpgart interface v0.103
+[    0.707780] loop: module loaded
+[    0.708084] nvme nvme0: pci function 0000:01:00.0
+[    0.708121] tun: Universal TUN/TAP device driver, 1.6
+[    0.708145] PPP generic driver version 2.4.2
+[    0.708170] VFIO - User Level meta-driver version: 0.3
+[    0.708209] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.708221] ehci-pci: EHCI PCI platform driver
+[    0.708231] ehci-platform: EHCI generic platform driver
+[    0.708247] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+[    0.708257] ohci-pci: OHCI PCI platform driver
+[    0.708267] ohci-platform: OHCI generic platform driver
+[    0.708673] uhci_hcd: USB Universal Host Controller Interface driver
+[    0.709218] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.709616] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 1
+[    0.711112] xhci_hcd 0000:00:14.0: hcc params 0x20007fc1 hci version 0x120 quirks 0x0000000000009810
+[    0.711526] xhci_hcd 0000:00:14.0: cache line size of 64 is not supported
+[    0.711670] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 4.19
+[    0.712082] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.712504] usb usb1: Product: xHCI Host Controller
+[    0.712909] usb usb1: Manufacturer: Linux 4.19.239-llvm10-sfi-workaround xhci-hcd
+[    0.713322] usb usb1: SerialNumber: 0000:00:14.0
+[    0.713835] hub 1-0:1.0: USB hub found
+[    0.714280] hub 1-0:1.0: 16 ports detected
+[    0.715609] xhci_hcd 0000:00:14.0: xHCI Host Controller
+[    0.716026] xhci_hcd 0000:00:14.0: new USB bus registered, assigned bus number 2
+[    0.716456] xhci_hcd 0000:00:14.0: Host supports USB 3.2 Enhanced SuperSpeed
+[    0.716886] usb usb2: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 4.19
+[    0.717301] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    0.717716] usb usb2: Product: xHCI Host Controller
+[    0.718121] usb usb2: Manufacturer: Linux 4.19.239-llvm10-sfi-workaround xhci-hcd
+[    0.718547] usb usb2: SerialNumber: 0000:00:14.0
+[    0.719079] hub 2-0:1.0: USB hub found
+[    0.719501] hub 2-0:1.0: 10 ports detected
+[    0.720504] i8042: PNP: No PS/2 controller found.
+[    0.721027] mousedev: PS/2 mouse device common for all mice
+[    0.721889] rtc_cmos rtc_cmos: RTC can wake from S4
+[    0.722708] rtc_cmos rtc_cmos: registered as rtc0
+[    0.723122] rtc_cmos rtc_cmos: alarms up to one month, y3k, 114 bytes nvram, hpet irqs
+[    0.723528] i2c /dev entries driver
+[    0.723959] device-mapper: uevent: version 1.0.3
+[    0.724432] device-mapper: ioctl: 4.39.0-ioctl (2018-04-03) initialised: dm-devel@redhat.com
+[    0.724826] intel_pstate: Intel P-state driver initializing
+[    0.726405] intel_pstate: HWP enabled
+[    0.727072] ledtrig-cpu: registered to indicate activity on CPUs
+[    0.727472] EFI Variables Facility v0.08 2004-May-17
+[    0.729718] drop_monitor: Initializing network drop monitor service
+[    0.730172] NET: Registered protocol family 10
+[    0.738387] Segment Routing with IPv6
+[    0.738793] NET: Registered protocol family 17
+[    0.739349] Key type dns_resolver registered
+[    0.741089] mce: Using 20 MCE banks
+[    0.741473] RAS: Correctable Errors collector initialized.
+[    0.741920] microcode: sig=0x90672, pf=0x2, revision=0x9
+[    0.742751] microcode: Microcode Update Driver: v2.2.
+[    0.742755] sched_clock: Marking stable (746339934, -3590007)->(803863786, -61113859)
+[    0.744634] registered taskstats version 1
+[    0.745023] Loading compiled-in X.509 certificates
+[    0.745422] zswap: loaded using pool lzo/zbud
+[    0.745905] Key type trusted registered
+[    0.747714] Key type encrypted registered
+[    0.748092] AppArmor: AppArmor sha1 policy hashing enabled
+[    0.748477] ima: Allocated hash algorithm: sha1
+[    0.763149] evm: Initialising EVM extended attributes:
+[    0.763528] evm: security.selinux
+[    0.763898] evm: security.SMACK64
+[    0.764277] evm: security.SMACK64EXEC
+[    0.764638] evm: security.SMACK64TRANSMUTE
+[    0.764993] evm: security.SMACK64MMAP
+[    0.765342] evm: security.apparmor
+[    0.765690] evm: security.ima
+[    0.766030] evm: security.capability
+[    0.766367] evm: HMAC attrs: 0x1
+[    0.767414]   Magic number: 6:428:459
+[    0.767991] rtc_cmos rtc_cmos: setting system clock to 2022-05-04 02:28:03 UTC (1651631283)
+[    0.939206]  nvme0n1: p1 p2
+[    0.970597] usb 1-10: new full-speed USB device number 2 using xhci_hcd
+[    1.046233] Freeing unused decrypted memory: 2040K
+[    1.124505] usb 1-10: New USB device found, idVendor=1a81, idProduct=2039, bcdDevice= 1.11
+[    1.125607] usb 1-10: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    1.126709] usb 1-10: Product: USB Keyboard
+[    1.127806] usb 1-10: Manufacturer: USB Keyboard
+[    1.128904] usb 1-10: SerialNumber: C87ANOLightA
+[    1.171549] Freeing unused kernel image memory: 2608K
+[    1.186621] Write protecting the kernel read-only data: 22528k
+[    1.188063] Freeing unused kernel image memory: 1976K
+[    1.188628] Freeing unused kernel image memory: 1648K
+[    1.193160] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+[    1.193508] Run /init as init process
+[    1.262520] usb 1-12: new full-speed USB device number 3 using xhci_hcd
+[    1.269402] ahci 0000:00:17.0: version 3.0
+[    1.269890] ahci 0000:00:17.0: AHCI 0001.0301 32 slots 4 ports 6 Gbps 0xf0 impl SATA mode
+[    1.270429] ahci 0000:00:17.0: flags: 64bit ncq sntf led clo only pio slum part ems deso sadm sds 
+[    1.271096] r8169 0000:02:00.0: can't disable ASPM; OS doesn't have ASPM control
+[    1.289718] r8169 0000:02:00.0 eth0: RTL8168h/8111h, 00:e0:97:1a:5e:d6, XID 54100800, IRQ 135
+[    1.290252] r8169 0000:02:00.0 eth0: jumbo features [frames: 9200 bytes, tx checksumming: ko]
+[    1.291835] r8169 0000:02:00.0 enp2s0: renamed from eth0
+[    1.315682] scsi host0: ahci
+[    1.317023] scsi host1: ahci
+[    1.318348] scsi host2: ahci
+[    1.319630] scsi host3: ahci
+[    1.320867] scsi host4: ahci
+[    1.322775] scsi host5: ahci
+[    1.324554] scsi host6: ahci
+[    1.326280] scsi host7: ahci
+[    1.327738] ata1: DUMMY
+[    1.329073] ata2: DUMMY
+[    1.330396] ata3: DUMMY
+[    1.331700] ata4: DUMMY
+[    1.332982] ata5: SATA max UDMA/133 abar m2048@0x80602000 port 0x80602300 irq 134
+[    1.334311] ata6: SATA max UDMA/133 abar m2048@0x80602000 port 0x80602380 irq 134
+[    1.335498] ata7: SATA max UDMA/133 abar m2048@0x80602000 port 0x80602400 irq 134
+[    1.336547] ata8: SATA max UDMA/133 abar m2048@0x80602000 port 0x80602480 irq 134
+[    1.417357] usb 1-12: New USB device found, idVendor=1ea7, idProduct=0064, bcdDevice= 2.00
+[    1.418750] usb 1-12: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[    1.420138] usb 1-12: Product: 2.4G Mouse
+[    1.550627] usb 1-14: new full-speed USB device number 4 using xhci_hcd
+[    1.654597] ata6: SATA link down (SStatus 4 SControl 300)
+[    1.655451] ata7: SATA link down (SStatus 4 SControl 300)
+[    1.656372] ata5: SATA link down (SStatus 4 SControl 300)
+[    1.657238] ata8: SATA link down (SStatus 4 SControl 300)
+[    1.700221] usb 1-14: New USB device found, idVendor=8888, idProduct=7ae0, bcdDevice= 1.01
+[    1.701644] usb 1-14: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[    1.703055] usb 1-14: Product: USB KEYBOARD
+[    1.704423] usb 1-14: Manufacturer: HOLTEK
+[    1.713870] hidraw: raw HID events driver (C) Jiri Kosina
+[    1.728640] usbcore: registered new interface driver usbhid
+[    1.729411] usbhid: USB HID core driver
+[    1.731841] input: USB Keyboard USB Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.0/0003:1A81:2039.0001/input/input3
+[    1.790900] hid-generic 0003:1A81:2039.0001: input,hidraw0: USB HID v1.11 Keyboard [USB Keyboard USB Keyboard] on usb-0000:00:14.0-10/input0
+[    1.792976] input: USB Keyboard USB Keyboard Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.1/0003:1A81:2039.0002/input/input4
+[    1.854808] input: USB Keyboard USB Keyboard Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-10/1-10:1.1/0003:1A81:2039.0002/input/input5
+[    1.857126] hid-generic 0003:1A81:2039.0002: input,hidraw1: USB HID v1.11 Keyboard [USB Keyboard USB Keyboard] on usb-0000:00:14.0-10/input1
+[    1.859653] hid-generic 0003:1A81:2039.0003: hiddev0,hidraw2: USB HID v1.11 Device [USB Keyboard USB Keyboard] on usb-0000:00:14.0-10/input2
+[    1.862062] input: 2.4G Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/0003:1EA7:0064.0004/input/input6
+[    1.863403] input: 2.4G Mouse Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-12/1-12:1.0/0003:1EA7:0064.0004/input/input7
+[    1.864919] hid-generic 0003:1EA7:0064.0004: input,hiddev1,hidraw3: USB HID v1.10 Mouse [2.4G Mouse] on usb-0000:00:14.0-12/input0
+[    1.867430] input: HOLTEK USB KEYBOARD as /devices/pci0000:00/0000:00:14.0/usb1/1-14/1-14:1.0/0003:8888:7AE0.0005/input/input8
+[    1.926930] hid-generic 0003:8888:7AE0.0005: input,hidraw4: USB HID v1.10 Keyboard [HOLTEK USB KEYBOARD] on usb-0000:00:14.0-14/input0
+[    1.929831] input: HOLTEK USB KEYBOARD System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-14/1-14:1.1/0003:8888:7AE0.0006/input/input9
+[    1.990851] input: HOLTEK USB KEYBOARD Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-14/1-14:1.1/0003:8888:7AE0.0006/input/input10
+[    1.993938] input: HOLTEK USB KEYBOARD as /devices/pci0000:00/0000:00:14.0/usb1/1-14/1-14:1.1/0003:8888:7AE0.0006/input/input11
+[    1.997486] hid-generic 0003:8888:7AE0.0006: input,hiddev2,hidraw5: USB HID v1.11 Device [HOLTEK USB KEYBOARD] on usb-0000:00:14.0-14/input1
+[    2.001069] hid-generic 0003:8888:7AE0.0007: hiddev3,hidraw6: USB HID v1.11 Device [HOLTEK USB KEYBOARD] on usb-0000:00:14.0-14/input2
+[    2.004829] hid-generic 0003:8888:7AE0.0008: hiddev4,hidraw7: USB HID v1.11 Device [HOLTEK USB KEYBOARD] on usb-0000:00:14.0-14/input3
+[    2.083066] EXT4-fs (nvme0n1p2): mounted filesystem with ordered data mode. Opts: (null)
+[    2.247654] systemd[1]: Inserted module 'autofs4'
+[    2.256465] cgroup: cgroup2: unknown option "memory_recursiveprot"
+[    2.264175] systemd[1]: systemd 248.3-1ubuntu8.5 running in system mode. (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT +GNUTLS -OPENSSL +ACL +BLKID +CURL +ELFUTILS -FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP -LIBFDISK +PCRE2 -PWQUALITY -P11KIT -QRENCODE +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+[    2.286943] systemd[1]: Detected architecture x86-64.
+[    2.296750] systemd[1]: Hostname set to <wangzc-wangzc>.
+[    2.479819] systemd[1]: /lib/systemd/system/trojan.service:9: Special user nobody configured, this is not safe!
+[    2.491014] systemd[1]: Queued start job for default target Graphical Interface.
+[    2.493577] systemd[1]: Created slice Virtual Machine and Container Slice.
+[    2.494995] systemd[1]: Created slice system-modprobe.slice.
+[    2.496319] systemd[1]: Created slice system-postfix.slice.
+[    2.497584] systemd[1]: Created slice system-systemd\x2dfsck.slice.
+[    2.498803] systemd[1]: Created slice User and Session Slice.
+[    2.499965] systemd[1]: Started Forward Password Requests to Wall Directory Watch.
+[    2.501199] systemd[1]: Set up automount Arbitrary Executable File Formats File System Automount Point.
+[    2.502343] systemd[1]: Reached target User and Group Name Lookups.
+[    2.503508] systemd[1]: Reached target Remote File Systems.
+[    2.504573] systemd[1]: Reached target Slices.
+[    2.505601] systemd[1]: Reached target Local Verity Integrity Protected Volumes.
+[    2.506609] systemd[1]: Reached target Libvirt guests shutdown.
+[    2.507629] systemd[1]: Listening on Device-mapper event daemon FIFOs.
+[    2.508653] systemd[1]: Listening on LVM2 poll daemon socket.
+[    2.509677] systemd[1]: Listening on Syslog Socket.
+[    2.510680] systemd[1]: Listening on fsck to fsckd communication Socket.
+[    2.511669] systemd[1]: Listening on initctl Compatibility Named Pipe.
+[    2.512704] systemd[1]: Listening on Journal Audit Socket.
+[    2.513710] systemd[1]: Listening on Journal Socket (/dev/log).
+[    2.514754] systemd[1]: Listening on Journal Socket.
+[    2.515825] systemd[1]: Listening on udev Control Socket.
+[    2.516792] systemd[1]: Listening on udev Kernel Socket.
+[    2.519887] systemd[1]: Mounting Huge Pages File System...
+[    2.521730] systemd[1]: Mounting POSIX Message Queue File System...
+[    2.523011] systemd[1]: Mounting Kernel Debug File System...
+[    2.524226] systemd[1]: Mounting Kernel Trace File System...
+[    2.527057] systemd[1]: Starting Journal Service...
+[    2.528105] systemd[1]: Finished Availability of block devices.
+[    2.529325] systemd[1]: Starting Set the console keyboard layout...
+[    2.530507] systemd[1]: Starting Create list of static device nodes for the current kernel...
+[    2.531677] systemd[1]: Starting Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling...
+[    2.532851] systemd[1]: Starting Load Kernel Module configfs...
+[    2.534036] systemd[1]: Starting Load Kernel Module drm...
+[    2.535211] systemd[1]: Starting Load Kernel Module fuse...
+[    2.536791] systemd[1]: Starting Set Up Additional Binary Formats...
+[    2.537749] systemd[1]: Condition check resulted in File System Check on Root Device being skipped.
+[    2.540076] systemd[1]: Starting Load Kernel Modules...
+[    2.541259] systemd[1]: Starting Remount Root and Kernel File Systems...
+[    2.542480] systemd[1]: Starting Coldplug All udev Devices...
+[    2.543837] systemd[1]: Starting Uncomplicated firewall...
+[    2.545128] EXT4-fs (nvme0n1p2): re-mounted. Opts: errors=remount-ro
+[    2.545914] systemd[1]: Started Journal Service.
+[    2.547861] lp: driver loaded but no devices found
+[    2.550548] ppdev: user-space parallel port driver
+[    2.557904] version 39.2
+[    2.559087] ipmi device interface
+[    2.559939] systemd-journald[357]: Received client request to flush runtime journal.
+[    2.573768] Adding 2097148k swap on /swapfile.  Priority:-2 extents:6 across:2260988k SSFS
+[    2.799269] acpi PNP0C14:01: duplicate WMI GUID 05901221-D566-11D1-B2F0-00A0C9062910 (first instance was on PNP0C14:00)
+[    2.813171] cryptd: max_cpu_qlen set to 1000
+[    2.818119] AVX2 version of gcm_enc/dec engaged.
+[    2.818121] AES CTR mode by8 optimization enabled
+[    2.856666] snd_hda_intel 0000:00:1f.3: enabling device (0000 -> 0002)
+[    2.856887] snd_hda_intel 0000:00:1f.3: number of I/O streams is 16, forcing separate stream tags
+[    2.872711] snd_hda_codec_realtek hdaudioC0D0: autoconfig for ALC897: line_outs=3 (0x14/0x15/0x16/0x0/0x0) type:line
+[    2.872712] snd_hda_codec_realtek hdaudioC0D0:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[    2.872713] snd_hda_codec_realtek hdaudioC0D0:    hp_outs=1 (0x1b/0x0/0x0/0x0/0x0)
+[    2.872713] snd_hda_codec_realtek hdaudioC0D0:    mono: mono_out=0x0
+[    2.872714] snd_hda_codec_realtek hdaudioC0D0:    dig-out=0x1e/0x0
+[    2.872714] snd_hda_codec_realtek hdaudioC0D0:    inputs:
+[    2.872715] snd_hda_codec_realtek hdaudioC0D0:      Front Mic=0x19
+[    2.872716] snd_hda_codec_realtek hdaudioC0D0:      Rear Mic=0x18
+[    2.872716] snd_hda_codec_realtek hdaudioC0D0:      Line=0x1a
+[    2.889000] input: HDA Intel Front Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input12
+[    2.889027] input: HDA Intel Rear Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input13
+[    2.889045] input: HDA Intel Line as /devices/pci0000:00/0000:00:1f.3/sound/card0/input14
+[    2.889061] input: HDA Intel Line Out Front as /devices/pci0000:00/0000:00:1f.3/sound/card0/input15
+[    2.889075] input: HDA Intel Line Out Surround as /devices/pci0000:00/0000:00:1f.3/sound/card0/input16
+[    2.889093] input: HDA Intel Line Out CLFE as /devices/pci0000:00/0000:00:1f.3/sound/card0/input17
+[    2.889108] input: HDA Intel Front Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input18
+[    3.421900] audit: type=1400 audit(1651631286.147:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-xpdfimport" pid=642 comm="apparmor_parser"
+[    3.422181] audit: type=1400 audit(1651631286.147:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=634 comm="apparmor_parser"
+[    3.422183] audit: type=1400 audit(1651631286.147:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=634 comm="apparmor_parser"
+[    3.422211] audit: type=1400 audit(1651631286.147:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine" pid=644 comm="apparmor_parser"
+[    3.422214] audit: type=1400 audit(1651631286.147:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=644 comm="apparmor_parser"
+[    3.422423] audit: type=1400 audit(1651631286.147:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=633 comm="apparmor_parser"
+[    3.422440] audit: type=1400 audit(1651631286.147:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-senddoc" pid=640 comm="apparmor_parser"
+[    3.422505] audit: type=1400 audit(1651631286.147:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libreoffice-oosplash" pid=639 comm="apparmor_parser"
+[    3.422660] audit: type=1400 audit(1651631286.151:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="libvirtd" pid=647 comm="apparmor_parser"
+[    4.573465] IPv6: ADDRCONF(NETDEV_UP): enp2s0: link is not ready
+[    4.604308] Generic PHY r8169-200:00: attached PHY driver [Generic PHY] (mii_bus:phy_addr=r8169-200:00, irq=IGNORE)
+[    4.713533] IPv6: ADDRCONF(NETDEV_UP): enp2s0: link is not ready
+[    4.713964] r8169 0000:02:00.0 enp2s0: Link is Down
+[    4.798069] bridge: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[    6.325972] r8169 0000:02:00.0 enp2s0: Link is Up - 100Mbps/Full - flow control rx/tx
+[    6.325995] IPv6: ADDRCONF(NETDEV_CHANGE): enp2s0: link becomes ready
+[    6.383526] kauditd_printk_skb: 36 callbacks suppressed
+[    6.383530] audit: type=1400 audit(1651631289.111:47): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=1056 comm="cups-browsed" capability=23  capname="sys_nice"
+[    6.536804] audit: type=1400 audit(1651631289.263:48): apparmor="STATUS" operation="profile_load" profile="unconfined" name="docker-default" pid=1335 comm="apparmor_parser"
+[    6.852111] Bridge firewalling registered
+[    6.924058] Initializing XFRM netlink socket
+[   16.175307] rfkill: input handler disabled
+[   19.654561] rfkill: input handler enabled
+[   20.715090] rfkill: input handler disabled
+[   21.426887] audit: type=1400 audit(1651631304.155:49): apparmor="DENIED" operation="capable" profile="/snap/core/12834/usr/lib/snapd/snap-confine" pid=3445 comm="snap-confine" capability=4  capname="fsetid"
+[   23.947708] audit: type=1400 audit(1651631306.675:50): apparmor="DENIED" operation="open" profile="snap.snap-store.ubuntu-software" name="/etc/xdg/mimeapps.list" pid=3445 comm="snap-store" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[   23.977032] audit: type=1326 audit(1651631306.703:51): auid=1000 uid=1000 gid=1000 ses=3 subj==snap.snap-store.ubuntu-software (enforce) pid=3445 comm="snap-store" exe="/snap/snap-store/558/usr/bin/snap-store" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7faa05f1c76d code=0x50000
+[   26.611442] audit: type=1400 audit(1651631309.339:52): apparmor="DENIED" operation="open" profile="snap.snap-store.ubuntu-software" name="/etc/PackageKit/Vendor.conf" pid=3445 comm="snap-store" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+[   39.796970] audit: type=1326 audit(1651631322.674:53): auid=1000 uid=1000 gid=1000 ses=3 subj==snap.snap-store.ubuntu-software (enforce) pid=3445 comm="pool-org.gnome." exe="/snap/snap-store/558/usr/bin/snap-store" sig=0 arch=c000003e syscall=93 compat=0 ip=0x7faa05f133cb code=0x50000
+[   54.825794] ext4_monitor: loading out-of-tree module taints kernel.
+[   54.826828] kprobe_init
+                
+[   56.237762] Planted fn & fp kretprobes
+[ 3911.125731] perf: interrupt took too long (2510 > 2500), lowering kernel.perf_event_max_sample_rate to 79500
+[ 4731.247743] CPU11: Core temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247744] CPU10: Core temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247745] CPU12: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247746] CPU13: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247747] CPU14: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247748] CPU15: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247749] CPU0: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247750] CPU2: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247751] CPU6: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247753] CPU8: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247753] CPU7: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247754] CPU5: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247755] CPU4: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247756] CPU3: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247757] CPU1: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247757] CPU9: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247758] CPU10: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.247759] CPU11: Package temperature above threshold, cpu clock throttled (total events = 1)
+[ 4731.248933] CPU10: Core temperature/speed normal
+[ 4731.248934] CPU11: Core temperature/speed normal
+[ 4731.248934] CPU12: Package temperature/speed normal
+[ 4731.248935] CPU14: Package temperature/speed normal
+[ 4731.248936] CPU13: Package temperature/speed normal
+[ 4731.248936] CPU15: Package temperature/speed normal
+[ 4731.248937] CPU2: Package temperature/speed normal
+[ 4731.248938] CPU0: Package temperature/speed normal
+[ 4731.248939] CPU5: Package temperature/speed normal
+[ 4731.248940] CPU6: Package temperature/speed normal
+[ 4731.248941] CPU3: Package temperature/speed normal
+[ 4731.248942] CPU7: Package temperature/speed normal
+[ 4731.248943] CPU1: Package temperature/speed normal
+[ 4731.248944] CPU4: Package temperature/speed normal
+[ 4731.248945] CPU8: Package temperature/speed normal
+[ 4731.248946] CPU9: Package temperature/speed normal
+[ 4731.248947] CPU10: Package temperature/speed normal
+[ 4731.248947] CPU11: Package temperature/speed normal
+[ 7187.338565] TCP: request_sock_TCP: Possible SYN flooding on port 8088. Sending cookies.  Check SNMP counters.
+[ 8333.339984] TCP: request_sock_TCP: Possible SYN flooding on port 8088. Sending cookies.  Check SNMP counters.
+[ 8539.529103] perf: interrupt took too long (3156 > 3137), lowering kernel.perf_event_max_sample_rate to 63250
+[11625.897014] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.897032] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.897047] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.897061] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909038] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909062] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909078] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909092] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909105] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909121] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909148] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909168] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909182] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.909195] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915634] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915648] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915662] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915675] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915689] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915703] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915722] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915740] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915756] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.915771] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.939875] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.940035] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.940450] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.940679] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.940846] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.940927] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.941206] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.942637] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.942745] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.942840] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.943017] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.943723] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.943866] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.943960] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.944428] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.944550] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945241] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945373] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945528] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945608] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945693] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945764] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945906] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.945993] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.946499] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.946627] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.946726] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.946904] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.947137] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.947377] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.947653] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.947956] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948046] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948155] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948228] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948303] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948386] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948476] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.948746] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.949302] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.949708] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.950386] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.950637] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.950771] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.950957] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.951491] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.951563] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.951648] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.951935] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952010] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952168] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952549] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952623] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952701] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952785] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952858] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.952930] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953004] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953076] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953234] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953351] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953583] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953837] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.953919] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954010] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954078] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954158] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954234] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954353] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954470] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954636] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954778] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954877] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.954952] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.955029] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.955122] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.955300] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.955393] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.955877] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.955965] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956108] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956187] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956266] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956365] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956454] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956556] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956655] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956758] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.956898] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.957103] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.957187] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.957352] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.957852] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.957976] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.958125] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.958262] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.958519] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.958776] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.958961] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.959684] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.959931] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.960064] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.960300] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.960610] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.960889] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.960991] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.961075] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.961170] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.961368] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.961460] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.961563] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.962245] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.962324] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.962679] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.962895] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.963010] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.963301] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.963831] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.963915] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.964150] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.964264] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.964351] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.964457] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.965834] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.966221] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.966491] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.966780] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.967042] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.967299] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.967698] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.967924] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.968473] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.968623] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.969398] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.969932] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.970285] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.972060] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.972184] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.972337] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.972555] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.972989] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.974084] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.974401] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.976196] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.977915] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.978693] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.979398] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.980227] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.980407] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.980581] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.981874] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.983692] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.983860] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.984012] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.984192] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.984886] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.985058] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.985637] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.987328] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.988746] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.989129] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.989418] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.990325] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.990633] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.992186] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.992872] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.993546] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.993810] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.993881] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994132] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994260] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994332] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994406] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994510] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994588] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994704] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994787] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.994924] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995002] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995083] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995182] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995352] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995450] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995531] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.995965] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.996073] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.996309] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.996667] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.996923] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.997143] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.997600] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.997683] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.997761] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.997890] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.998283] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.998848] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.999160] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.999341] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.999551] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.999633] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.999710] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11625.999856] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000148] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000309] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000398] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000572] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000681] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000769] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000861] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.000944] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.001471] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.001671] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.001851] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.002287] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.002391] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.002818] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.002976] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.003203] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.003286] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.003378] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.003617] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.003945] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.004319] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.004726] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.004920] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.005338] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.005620] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.006447] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.006963] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.007224] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.007500] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.007623] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.007711] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.007849] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.007920] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.008019] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.008114] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.009262] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.010480] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.010838] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.010913] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.011181] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.012512] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.013867] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.013950] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.014368] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.014905] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.015727] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.015889] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.016013] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.016085] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.016182] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.016254] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.016360] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.016797] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.017079] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.017744] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.018158] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.018380] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.018508] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.018696] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.018959] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019080] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019168] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019248] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019332] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019406] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019487] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.019577] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.020044] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.020220] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.020307] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.020692] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.020858] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.020970] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.021112] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.021186] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.021283] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.021532] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022095] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022309] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022395] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022612] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022702] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022903] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.022983] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.023283] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.023576] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.024563] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.025943] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.026112] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.026301] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.026618] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.028803] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.029626] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.030198] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.031686] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.032066] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.032146] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.032846] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.033161] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.033435] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.033685] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.034569] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.035436] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.037238] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.037351] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.037543] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.037671] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.037763] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.038078] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.038246] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.038349] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.038661] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.038872] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.039058] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.039164] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.039554] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.040133] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.040610] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.040898] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.041184] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.041274] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.041352] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.041982] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.042306] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.042884] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043027] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043112] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043202] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043288] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043373] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043471] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043632] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.043941] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044090] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044169] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044259] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044376] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044462] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044549] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044676] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044763] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044851] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.044922] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.045023] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.045145] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.045229] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.045312] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.045787] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.045892] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.046036] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.046162] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.046253] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.046512] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.047233] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.047324] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.048072] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.048546] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.048629] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.049657] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.050040] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.051040] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.051360] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.051523] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.052172] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.052801] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.053043] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.054030] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.054124] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.054211] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.054528] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.054868] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055009] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055085] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055161] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055235] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055332] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055491] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055648] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055731] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055812] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055902] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.055991] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.056227] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.056433] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.057249] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.058540] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.058851] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.059067] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.059232] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.061322] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.061731] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.062829] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.062967] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.063200] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.063311] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.063845] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.064011] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.064095] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.064172] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.064262] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.064348] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.065372] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.065681] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.066000] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.066256] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.066547] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.066650] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.066824] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.066908] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.067028] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.067477] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.067905] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.068011] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.068565] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.068914] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.069435] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.069849] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.069937] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070076] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070167] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070251] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070331] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070424] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070519] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070622] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070723] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070813] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070910] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.070988] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.071071] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.071164] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.071286] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.072110] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.072362] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.072631] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.072870] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.073040] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.073113] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.073189] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.073286] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.073396] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.073654] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.074130] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.074452] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.075103] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.075173] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.075576] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.075771] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.076188] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.076279] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.076350] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.076460] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.076556] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.076671] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.077344] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.077632] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.077733] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.077820] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.077950] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.078054] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.078124] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.078196] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.078272] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.079148] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.079563] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.079651] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.079896] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.080089] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.080258] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.080763] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.081724] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.081870] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.082514] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.083133] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.083294] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.084318] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.084692] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.084950] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.085276] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.086384] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.087114] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.087711] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.088047] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.089424] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.089587] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.089756] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.089841] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.089924] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090034] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090219] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090311] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090393] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090510] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090829] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.090990] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.091077] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.091343] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.091491] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.092051] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.092239] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.092337] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.092495] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093121] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093236] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093348] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093457] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093582] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093693] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.093827] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.095191] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.095332] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.095622] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.095781] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.095876] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.095971] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.096245] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.096324] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.096753] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.097064] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.097191] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.097829] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.098126] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.098891] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.098981] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.099701] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.099958] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.100234] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.100643] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.100955] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101093] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101187] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101275] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101371] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101589] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101671] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101750] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101826] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.101940] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.103013] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.103111] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.103360] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.103749] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104006] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104177] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104369] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104481] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104569] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104666] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104759] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104854] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.104947] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105050] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105131] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105217] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105354] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105476] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105879] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.105955] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106071] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106178] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106256] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106340] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106458] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106550] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106655] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106764] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106858] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.106954] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107032] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107153] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107227] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107325] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107410] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107534] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107622] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107707] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107809] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.107914] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108006] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108087] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108186] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108275] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108387] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108526] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.108796] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.109071] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.109157] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.109601] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.109765] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.110025] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.110132] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.110337] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.110455] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.110531] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.110787] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.111149] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.111232] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.111443] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.111517] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.111744] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.112127] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.112358] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.112558] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.112818] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.113067] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.113212] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.113294] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.113510] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.114286] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.114574] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.115164] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.115375] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.115449] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.115531] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.115626] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.115793] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.116585] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.116666] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.116759] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.116983] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.117182] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.117252] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.117336] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.117448] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.117533] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.117670] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.118009] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.118521] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.118705] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.119057] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.119305] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.119394] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.119561] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.119817] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.120161] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.120470] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.120652] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.120818] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.120918] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.120989] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.121237] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.121321] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.121489] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.121568] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.121786] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.121922] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.122369] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.122790] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.123207] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.123510] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.123863] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.124009] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.124212] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.124619] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.124774] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.124908] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.125326] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.125556] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.125787] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.125858] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.126011] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.126150] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.126324] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.126801] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.127019] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.127451] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.127713] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.128036] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.128128] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.128330] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.128525] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.129009] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.130154] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.130335] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.130524] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.131062] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.131668] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.132080] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.132476] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.132697] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.133207] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.133516] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.133714] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.134330] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.134535] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.134964] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.135275] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.135910] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.136312] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.138415] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.140204] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.140436] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.140690] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.141140] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.141215] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.141690] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.141930] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.142231] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.142508] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.142602] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.142805] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.142920] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.143163] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.143924] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.144030] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.144101] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.144339] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.144799] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.145072] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.145245] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11626.145443] ketag_alloc_addr: e000cf4e88000000, e000cf4e88001000
+[11926.706074] perf: interrupt took too long (3952 > 3945), lowering kernel.perf_event_max_sample_rate to 50500

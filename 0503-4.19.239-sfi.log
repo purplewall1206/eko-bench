@@ -1,0 +1,391 @@
+Linux wangzc-wangzc 4.19.239-llvm10-sfi #22 SMP Thu Apr 28 12:58:49 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+===================kernel decompress===================
+
+real	0m5.019s
+user	0m4.515s
+sys	0m3.633s
+
+real	0m4.990s
+user	0m4.571s
+sys	0m3.517s
+
+real	0m5.019s
+user	0m4.570s
+sys	0m3.549s
+
+real	0m5.407s
+user	0m4.811s
+sys	0m4.134s
+
+real	0m5.197s
+user	0m4.701s
+sys	0m3.862s
+
+real	0m5.212s
+user	0m4.629s
+sys	0m3.994s
+
+real	0m5.202s
+user	0m4.654s
+sys	0m3.905s
+
+real	0m5.225s
+user	0m4.680s
+sys	0m3.955s
+
+real	0m5.507s
+user	0m4.892s
+sys	0m4.181s
+
+real	0m5.306s
+user	0m4.735s
+sys	0m3.995s
+===================kernel build===================
+/home/wangzc/Desktop/experiment/eko-bench/kernel-build
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  YACC    scripts/kconfig/zconf.tab.c
+  LEX     scripts/kconfig/zconf.lex.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+*** Default configuration is based on 'x86_64_defconfig'
+#
+# configuration written to .config
+#
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m17.480s
+user	11m38.870s
+sys	2m4.618s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m18.581s
+user	12m2.567s
+sys	2m6.007s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m16.420s
+user	11m42.316s
+sys	2m3.664s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m14.286s
+user	11m23.342s
+sys	2m2.790s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m14.445s
+user	11m23.090s
+sys	2m2.455s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+===================fs-mark===================
+===================fs-mark===================
+1KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1024  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1024 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 1000 new files, exiting
+fopen failed to open: fs_log.txt.196264
+10KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10240  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10240 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 1000 new files, exiting
+fopen failed to open: fs_log.txt.196266
+100KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  102400  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 102400 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 1000 new files, exiting
+fopen failed to open: fs_log.txt.196268
+1MB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1048576  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 1000 new files, exiting
+fopen failed to open: fs_log.txt.196270
+10MB file * 100 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10485760  -n  100 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10485760 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 100 new files, exiting
+fopen failed to open: fs_log.txt.196272
+100MB file * 20 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  104857600  -n  20 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 104857600 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 20 new files, exiting
+fopen failed to open: fs_log.txt.196274
+1GB file * 5 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10485760  -n  5 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 09:14:55 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10485760 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+Insufficient free space in scratch to create 5 new files, exiting
+fopen failed to open: fs_log.txt.196276
+===================lmbench===================
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m11.957s
+user	0m46.133s
+sys	1m26.847s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m9.983s
+user	0m46.016s
+sys	1m25.988s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m8.903s
+user	0m45.274s
+sys	1m25.479s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m9.229s
+user	0m46.340s
+sys	1m24.971s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m13.776s
+user	0m46.031s
+sys	1m25.934s
+
+
+

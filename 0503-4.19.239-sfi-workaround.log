@@ -1,0 +1,475 @@
+Linux wangzc-wangzc 4.19.239-llvm10-sfi-workaround #25 SMP Fri Apr 29 07:17:06 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+===================kernel decompress===================
+
+real	0m4.853s
+user	0m4.603s
+sys	0m2.833s
+
+real	0m4.817s
+user	0m4.547s
+sys	0m2.803s
+
+real	0m4.850s
+user	0m4.578s
+sys	0m2.872s
+
+real	0m4.824s
+user	0m4.576s
+sys	0m2.793s
+
+real	0m4.824s
+user	0m4.573s
+sys	0m2.796s
+
+real	0m4.807s
+user	0m4.547s
+sys	0m2.805s
+
+real	0m4.800s
+user	0m4.505s
+sys	0m2.820s
+
+real	0m4.831s
+user	0m4.554s
+sys	0m2.826s
+
+real	0m4.808s
+user	0m4.559s
+sys	0m2.769s
+
+real	0m4.793s
+user	0m4.551s
+sys	0m2.753s
+===================kernel build===================
+/home/wangzc/Desktop/experiment/eko-bench/kernel-build
+  HOSTCC  scripts/basic/fixdep
+  HOSTCC  scripts/kconfig/conf.o
+  YACC    scripts/kconfig/zconf.tab.c
+  LEX     scripts/kconfig/zconf.lex.c
+  HOSTCC  scripts/kconfig/zconf.tab.o
+  HOSTLD  scripts/kconfig/conf
+*** Default configuration is based on 'x86_64_defconfig'
+#
+# configuration written to .config
+#
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m14.722s
+user	11m28.307s
+sys	1m56.227s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m12.490s
+user	11m21.346s
+sys	1m53.606s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m12.967s
+user	11m24.744s
+sys	1m54.592s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m12.777s
+user	11m24.103s
+sys	1m53.905s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+arch/x86/entry/entry_64.S: Assembler messages:
+arch/x86/entry/entry_64.S:1738: 警告： no instruction mnemonic suffix given and no register operands; using default for `sysret'
+drivers/gpu/drm/i915/intel_dp.c: In function ‘intel_dp_check_mst_status’:
+drivers/gpu/drm/i915/intel_dp.c:4129:30: warning: ‘drm_dp_channel_eq_ok’ reading 6 bytes from a region of size 4 [-Wstringop-overread]
+ 4129 |                             !drm_dp_channel_eq_ok(&esi[10], intel_dp->lane_count)) {
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+drivers/gpu/drm/i915/intel_dp.c:4129:30: note: referencing argument 1 of type ‘const u8 *’ {aka ‘const unsigned char *’}
+In file included from drivers/gpu/drm/i915/intel_dp.c:39:
+./include/drm/drm_dp_helper.h:954:6: note: in a call to function ‘drm_dp_channel_eq_ok’
+  954 | bool drm_dp_channel_eq_ok(const u8 link_status[DP_LINK_STATUS_SIZE],
+      |      ^~~~~~~~~~~~~~~~~~~~
+ld: arch/x86/boot/compressed/head_64.o: warning: relocation in read-only section `.head.text'
+ld: warning: creating DT_TEXTREL in a PIE
+
+real	1m12.723s
+user	11m24.334s
+sys	1m54.531s
+  CLEAN   .
+  CLEAN   arch/x86/entry/vdso
+  CLEAN   arch/x86/kernel/cpu
+  CLEAN   arch/x86/kernel
+  CLEAN   arch/x86/realmode/rm
+  CLEAN   arch/x86/lib
+  CLEAN   certs
+  CLEAN   drivers/scsi
+  CLEAN   drivers/tty/vt
+  CLEAN   drivers/video/logo
+  CLEAN   lib
+  CLEAN   net/wireless
+  CLEAN   security/selinux
+  CLEAN   usr
+  CLEAN   arch/x86/boot/compressed
+  CLEAN   arch/x86/boot
+  CLEAN   arch/x86/tools
+  CLEAN   .tmp_versions
+===================fs-mark===================
+===================fs-mark===================
+1KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1024  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:49:20 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1024 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    92         1000         1024       1593.5            11109
+    92         2000         1024       1200.9            14343
+    92         3000         1024       1373.7            12668
+    92         4000         1024       1573.1            11300
+    92         5000         1024       1597.1            11196
+    92         6000         1024       1522.1            11733
+    92         7000         1024       1379.6            12844
+    92         8000         1024       1562.1            11097
+    92         9000         1024       1325.0            13244
+    92        10000         1024       1556.6            11299
+Average Files/sec:       1468.0
+p50 Files/sec: 1522
+p90 Files/sec: 1200
+p99 Files/sec: 1200
+10KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10240  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:49:27 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10240 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    92         1000        10240       1624.6             6458
+    92         2000        10240       1398.5            12243
+    92         3000        10240       1392.1            12327
+    92         4000        10240       1383.5            12428
+    92         5000        10240       1265.7            13551
+    92         6000        10240       1440.1            12015
+    92         7000        10240        882.1            16856
+    92         8000        10240       1053.2            15361
+    92         9000        10240       1464.6            11946
+    92        10000        10240       1418.7            12170
+Average Files/sec:       1331.9
+p50 Files/sec: 1392
+p90 Files/sec: 882
+p99 Files/sec: 882
+100KB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  102400  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:49:34 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 102400 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    92         1000       102400        748.8            12433
+    92         2000       102400        782.7            12623
+    92         3000       102400        768.9            12323
+    92         4000       102400        738.9            12965
+    92         5000       102400        763.0            12236
+    92         6000       102400        778.6            12205
+    92         7000       102400        753.8            12748
+    92         8000       102400        742.1            12308
+    92         9000       102400        759.0            12211
+    92        10000       102400        493.8            13019
+Average Files/sec:        732.4
+p50 Files/sec: 753
+p90 Files/sec: 493
+p99 Files/sec: 493
+1MB file * 1000 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  1048576  -n  1000 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:49:48 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 1048576 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    93         1000      1048576         93.3            19872
+    93         2000      1048576         91.7            20520
+    93         3000      1048576         91.3            20429
+    93         4000      1048576        101.7            19822
+    93         5000      1048576        382.7            13573
+    93         6000      1048576        386.4            13648
+    93         7000      1048576        388.9            13860
+    93         8000      1048576         37.8            40417
+    93         9000      1048576         35.5            39460
+    94        10000      1048576        401.6            13926
+Average Files/sec:        200.5
+p50 Files/sec: 93
+p90 Files/sec: 35
+p99 Files/sec: 35
+10MB file * 100 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10485760  -n  100 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:51:36 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10485760 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    94          100     10485760         60.7             2533
+    94          200     10485760         58.0             2655
+    94          300     10485760          7.3             5567
+    94          400     10485760          3.1             6067
+    94          500     10485760          6.1             3244
+    94          600     10485760         60.0             2624
+    94          700     10485760         18.1             3469
+    94          800     10485760          4.0             6527
+    94          900     10485760          5.0             4834
+    95         1000     10485760         59.2             2555
+Average Files/sec:         28.0
+p50 Files/sec: 7
+p90 Files/sec: 3
+p99 Files/sec: 3
+100MB file * 20 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  104857600  -n  20 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:53:36 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 104857600 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    95           20    104857600          0.5             2917
+    95           40    104857600          0.5             2897
+    95           60    104857600          7.0             2314
+    95           80    104857600          1.6             2545
+    96          100    104857600          0.5             3224
+    96          120    104857600          0.6             2680
+    96          140    104857600          7.1             2679
+    96          160    104857600          0.4             2803
+    96          180    104857600          1.0             2456
+    97          200    104857600          0.9             2747
+Average Files/sec:          1.6
+p50 Files/sec: 0
+p90 Files/sec: 0
+p99 Files/sec: 0
+1GB file * 5 -> 10 times
+
+#  ./fs_mark  -d  scratch  -L  10  -s  10485760  -n  5 
+#	Version 3.3, 1 thread(s) starting at Wed May  4 13:58:07 2022
+#	Sync method: INBAND FSYNC: fsync() per file in write loop.
+#	Directories:  no subdirectories used
+#	File names: 40 bytes long, (16 initial bytes of time stamp with 24 random bytes at end of name)
+#	Files info: size 10485760 bytes, written with an IO size of 16384 bytes per write
+#	App overhead is time in microseconds spent in the test not doing file writing related system calls.
+
+FSUse%        Count         Size    Files/sec     App Overhead
+    97            5     10485760          3.4              288
+    97           10     10485760          3.5              349
+    97           15     10485760          3.4              340
+    97           20     10485760          3.0              291
+    97           25     10485760          3.4              293
+    97           30     10485760          3.3              287
+    97           35     10485760          3.3              311
+    97           40     10485760          3.2              290
+    97           45     10485760          2.9              329
+    97           50     10485760          3.3              274
+Average Files/sec:          2.9
+p50 Files/sec: 3
+p90 Files/sec: 2
+p99 Files/sec: 2
+===================lmbench===================
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m13.496s
+user	0m46.926s
+sys	1m25.542s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m9.235s
+user	0m46.483s
+sys	1m25.104s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m4.772s
+user	0m43.489s
+sys	1m21.598s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m9.944s
+user	0m46.501s
+sys	1m25.728s
+cd src && make rerun
+make[1]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“all”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 进入目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+gmake[2]: 对“opt”无需做任何事。
+gmake[2]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+make[1]: 离开目录“/home/wangzc/Desktop/experiment/eko-bench/lmbench/src”
+
+real	2m10.339s
+user	0m46.021s
+sys	1m25.589s
+
+
+
